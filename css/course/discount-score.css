@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.score-input{
+    border:none;
+    outline:none;
+}
+.exchange-score-btn{
+    display: inline-block;
+    width:300px;
+    height:35px;
+    border:none;
+    outline:none;
+    color: #fff;
+    background: url(../../images/submit-btn.png) 0 0 no-repeat;
+    -webkit-background-size:contain;
+    background-size:contain;
+}

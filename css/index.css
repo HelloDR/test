@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* 公共样式 */
+#app{
+    /*overflow-y: auto;*/
+    /*!*overflow-x: hidden;*!*/
+    /*height:567px;*/
+}
+body{
+    font-family:PingFang,SourceHanSansN,"宋体";
+}
+img {
+    width: 100%;
+}
+.color333{
+    color: #333;
+}
+
+/* 轮播图 */
+.banner {
+    /*height: 175px;*/
+    /*overflow: hidden*/
+}
+
+/*导航栏*/
+.nav-txt{
+    font-family:PingFang;
+}
+.am-control-nav {
+    bottom: 10px !important;
+}
+
+.am-direction-nav {
+    display: none;
+}
+
+.am-slider-default .am-control-nav li a {
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.am-slider-default .am-control-nav li a:hover {
+    background-color: red;
+    cursor: default;
+}
+
+.am-slider-default .am-control-nav li a.am-active {
+    background-color: red;
+    cursor: default;
+}
+
+/*.ico > img{*/
+/*width:67px;*/
+/*height:67px;*/
+/*}*/
+.icon {
+    width: 67px;
+    height: 67px;
+    display: inline-block;
+}
+
+.icon1 {
+    background: url(../images/sprite.png) -58px -114px no-repeat;
+}
+
+.icon2 {
+    background: url(../images/sprite.png) -167px -114px no-repeat;
+}
+
+.icon3 {
+    background: url(../images/sprite.png) -273px -114px no-repeat;
+}
+
+.icon4 {
+    background: url(../images/sprite.png) -381px -114px no-repeat;
+}
+
+/* 分割线1 */
+.thin_line {
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+/* 最新快报 */
+.last-new-division {
+    /*padding: 0 10px;*/
+}
+
+.last-new-division-item {
+    height: 1px;
+    background-color: #f0f1f5;
+    margin: 5px 0;
+}
+
+.last-new {
+    margin-bottom: -10px;
+}
+
+.last-new .platform-icon {
+    width: 65px;
+    height: 28px;
+    display: inline-block;
+    background: url(../images/sprite.png) 0 -514px no-repeat;
+}
+.fast-news{
+    font-family: PingFang;
+    top:15px;
+}
+.platform{
+    font-family: PingFang;
+}
+
+/* 分割线2 */
+.line {
+    height: 9px;
+    background-color: rgba(242, 242, 242, 1);
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* 课程 */
+.more {
+    /*display: block;*/
+    /*text-align: right;*/
+    position: relative;
+    top: -10px;
+    font-size: 1.7rem;
+    color: #666;
+    font-family:PingFang;
+}
+
+.courses_name > a > img {
+    margin: 10px 0;
+    /*width:161px;*/
+    height: 100px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.borderLeft {
+    border-left: 5px solid #000;
+    padding-left: 8px;
+    height: 20px;
+    line-height: 20px;
+    font-weight:bold;
+    font-family:PingFang;
+}
+.left-arrow{
+    display: inline-block;
+    width:16px;
+    height:32px;
+    background: url(../images/sprite.png) -18px -698px  no-repeat;
+}
+.course-name{
+    color: #333;
+    font-family: PingFang;
+}
+.institution-name{
+    color: #666;
+    font-family:PingFang;
+}
+
+/* 精选机构 */
+.good-institution-name{
+    font-family:PingFang;
+}
+
+/* 新闻咨询 */
+.new_txt {
+    margin-top: 10px;
+    margin-bottom: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-family:PingFang;
+}
+.ellipsis:after{
+    display: inline;
+    content: "...";
+    font-size:16px;
+    font-weight:bold;
+    font-family:PingFang;
+}
+
+/*  拼团 */
+/* 拼团页面样式 */
+.user img{
+    width: 60px;
+    height:60px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+.user span{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height:55px;
+    margin-left:5px;
+}
+.tip-txt{
+    line-height:50px;
+    text-align: right;
+}
+.tip-txt span{
+    color: #ddd;
+    font-weight:bold;
+    margin-top:20px;
+}
+.main-img{
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px;
+    border-radius:12px;
+}
+.collage-icon{
+    width:150px;
+    color: #888;
+    margin:10px 0 0 -12px;
+}
+.join-btn{
+    text-align: right;
+    /*margin:10px 0 0 0;*/
+}
+.join-btn button{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(255, 0, 0, 1);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size:16px;
+}
+

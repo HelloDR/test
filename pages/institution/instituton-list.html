@@ -1,0 +1,486 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>精选机构</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="../../assets/i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../../assets/i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="../../assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <link rel="stylesheet" href="../../assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/institution/institution-list.css">
+    <!-- 滑屏样式-->
+    <style>
+        body{
+            overflow: hidden;
+        }
+        .wrapper {
+            position: relative;
+            height: 360px;
+            -ms-touch-action: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-text-size-adjust: none;
+            -moz-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            -o-text-size-adjust: none;
+            text-size-adjust: none;
+        }
+
+        #category-left,#category-right,#area_left,#area_right{
+            position: relative;
+            height: 400px;
+            -ms-touch-action: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-text-size-adjust: none;
+            -moz-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            -o-text-size-adjust: none;
+            text-size-adjust: none;
+        }
+        #mainPart{
+            position: absolute;
+            width:100%;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+            z-index: -1;
+        }
+        /*#wrapper_category,#wrapper_ul,#area_ul,#wrapper_area*/
+        #wrapper_ul,#wrapper_category,#area_ul,#wrapper_area{
+            position: absolute;
+            width:100%;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+    </style>
+</head>
+<body onload="loaded()">
+<div style="background-color:#fff">
+    <!-- S 头部 -->
+    <div id="topBar">
+        <!--搜索 -->
+        <div class="am-g am-padding-top-sm am-padding-horizontal-sm">
+            <div class="am-u-sm-3 position-txt">
+                <a class="am-text-default" href="#">常州</a>
+            </div>
+            <div class="am-u-sm-9">
+                <input type="text" class="search_txt am-text-lg">
+            </div>
+        </div>
+        <!-- tab选项卡 -->
+        <div class="am-g am-text-center tab-wrap am-padding-left-lg">
+            <a href="../../pages/course/course-list.html"><div class="am-u-sm-6 am-text-center"><h3 class="tab"><i class="icon"></i>优选课程</h3></div></a>
+            <a href="instituton-list.html"><div class="am-u-sm-6 am-text-center"><h3 class="tab institution-tab"><i class="icon institution-icon"></i>精选机构</h3></div></a>
+        </div>
+    </div>
+    <!-- E 头部 -->
+
+    <!--S 导航栏 -->
+    <div id="navBar">
+        <div id="navContent">
+            <div class="am-g center nav">
+                <p class="am-u-sm-3 com-class" id="comprehensive">
+                    <span class="am-text-lg">综合 <i class="am-icon-caret-down"></i></span>
+                </p>
+                <p class="am-u-sm-3 com-class" id="category">
+                    <span class="am-text-lg">类别 <i class="am-icon-caret-down"></i></span>
+                </p>
+                <p class="am-u-sm-3 com-class" id="area">
+                    <span class="am-text-lg">区域<i class="am-icon-caret-down"></i></span>
+                </p>
+<<<<<<< HEAD
+                <div class="am-u-sm-3" id="filter">
+                    <a href="#doc-oc-demo1" data-am-offcanvas><span class="am-text-lg">筛选<span class="am-icon-caret-down"></span></span></a>
+=======
+                <div class="am-u-sm-3">
+                    <a class="doc-oc-js" data-rel="open"><span class="am-text-lg">筛选<span class="am-icon-caret-down"></span></span></a>
+>>>>>>> newbranch
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--E 导航栏 -->
+</div>
+<div id="down-list-content">
+    <!-- 综合内容 -->
+    <div class="down-list" id="comprehensive-main">
+        <div class="mask" id="mask"></div>
+        <ul class="Spinner common-Spinner" id="spinner">
+            <li><a href="#">距离最近</a></li>
+            <li><a href="#">综合排序</a></li>
+        </ul>
+    </div>
+    <!-- 类别二级菜单内容 -->
+    <div class="category-main down-list" id="category-main">
+        <div class="category-left" id="category-left">
+            <div id="wrapper_ul">
+                <ul>
+                    <li class="now"><a href="#">艺术.兴趣</a></li>
+                    <li><a href="#">学前.小学</a></li>
+                    <li><a href="#">其他</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="category-right" id="category-right">
+            <div id="wrapper_category">
+                <div class="category-box">
+                    <div class="category-item">
+                        <h2 class="hd am-text-default">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd am-text-default">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd am-text-default">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd am-text-default">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd am-text-default">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd am-text-default">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd am-text-default">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                </div>
+                <div class="category-box am-hide">
+                    <div class="category-item">
+                        <h2 class="hd am-text-default">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd am-text-default">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                </div>
+                <div class="category-box am-hide">
+                    <div class="category-item">
+                        <h2 class="hd am-text-default">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd am-text-default">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd am-text-default">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 区域二级菜单内容 -->
+    <div class="area-main down-list" id="area-main">
+        <div class="category-left area-category-left" id="area_left">
+            <div id="area_ul">
+                <ul>
+                    <li class="now"><a href="#">全部</a></li>
+                    <li><a href="#">武进区</a></li>
+                    <li><a href="#">钟楼区</a></li>
+                    <li><a href="#">天宁区</a></li>
+                    <li><a href="#">新北区</a></li>
+                    <li><a href="#">金坛</a></li>
+                    <li><a href="#">溧阳</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="category-right" id="area_right">
+            <div id="wrapper_area">
+                <div class="category-box area-category-box">
+                    <div class="category-item">
+                        <h2 class="hd am-text-default area-hd">全部</h2>
+                        <p class="txt"><span>恐龙园</span><span>常州火车站</span><span>薛家</span><span>吾悦国际</span></p>
+                        <p class="txt"><span>恐龙园</span><span>常州火车站</span><span>薛家</span><span>吾悦国际</span></p>
+                    </div>
+                </div>
+                <div class="category-box area-category-box am-hide">
+                    <div class="category-item">
+                        <h2 class="hd am-text-default area-hd">全部</h2>
+                        <p class="txt"><span>吾悦广场</span><span>又一城</span><span>新城上街</span><span>人名路</span></p>
+                        <p class="txt"><span>吾悦广场</span><span>又一城</span><span>新城上街</span><span>人名路</span></p>
+                        <p class="txt"><span>吾悦广场</span><span>又一城</span><span>新城上街</span><span>人名路</span></p>
+                        <p class="txt"><span>吾悦广场</span><span>又一城</span><span>新城上街</span><span>人名路</span></p>
+                        <p class="txt"><span>吾悦广场</span><span>又一城</span><span>新城上街</span><span>人名路</span></p>
+                        <p class="txt"><span>吾悦广场</span><span>又一城</span><span>新城上街</span><span>人名路</span></p>
+                        <p class="txt"><span>吾悦广场</span><span>又一城</span><span>新城上街</span><span>人名路</span></p>
+                        <p class="txt"><span>吾悦广场</span><span>又一城</span><span>新城上街</span><span>人名路</span></p>
+                        <p class="txt"><span>吾悦广场</span><span>又一城</span><span>新城上街</span><span>人名路</span></p>
+                        <p class="txt"><span>吾悦广场</span><span>又一城</span><span>新城上街</span><span>人名路</span></p>
+                        <p class="txt"><span>吾悦广场</span><span>又一城</span><span>新城上街</span><span>人名路</span></p>
+                        <p class="txt"><span>吾悦广场</span><span>又一城</span><span>新城上街</span><span>人名路</span></p>
+                    </div>
+                </div>
+                <div class="category-box area-category-box am-hide">
+                    <div class="category-item">
+                        <h2 class="hd am-text-default area-hd">全部</h2>
+                        <p class="txt"><span>莱蒙都会</span><span>南大街</span><span>西新桥</span><span>北大街</span></p>
+                        <p class="txt"><span>莱蒙都会</span><span>南大街</span><span>西新桥</span><span>北大街</span></p>
+                        <p class="txt"><span>莱蒙都会</span><span>南大街</span><span>西新桥</span><span>北大街</span></p>
+                        <p class="txt"><span>莱蒙都会</span><span>南大街</span><span>西新桥</span><span>北大街</span></p>
+                        <p class="txt"><span>莱蒙都会</span><span>南大街</span><span>西新桥</span><span>北大街</span></p>
+                        <p class="txt"><span>莱蒙都会</span><span>南大街</span><span>西新桥</span><span>北大街</span></p>
+                        <p class="txt"><span>莱蒙都会</span><span>南大街</span><span>西新桥</span><span>北大街</span></p>
+                    </div>
+                </div>
+                <div class="category-box area-category-box am-hide">
+                    <div class="category-item">
+                        <h2 class="hd am-text-default area-hd">全部</h2>
+                        <p class="txt"><span>九州新世界</span><span>翠竹</span><span>文化宫</span><span>兰陵</span></p>
+                        <p class="txt"><span>九州新世界</span><span>翠竹</span><span>文化宫</span><span>兰陵</span></p>
+                        <p class="txt"><span>九州新世界</span><span>翠竹</span><span>文化宫</span><span>兰陵</span></p>
+                        <p class="txt"><span>九州新世界</span><span>翠竹</span><span>文化宫</span><span>兰陵</span></p>
+                    </div>
+                </div>
+                <div class="category-box area-category-box am-hide">
+                    <div class="category-item">
+                        <h2 class="hd am-text-default area-hd">全部</h2>
+                        <p class="txt"><span>新北万达</span><span>太湖路</span><span>奥体中心</span><span>江南环球港</span></p>
+                        <p class="txt"><span>新北万达</span><span>太湖路</span><span>奥体中心</span><span>江南环球港</span></p>
+                        <p class="txt"><span>新北万达</span><span>太湖路</span><span>奥体中心</span><span>江南环球港</span></p>
+                        <p class="txt"><span>新北万达</span><span>太湖路</span><span>奥体中心</span><span>江南环球港</span></p>
+                        <p class="txt"><span>新北万达</span><span>太湖路</span><span>奥体中心</span><span>江南环球港</span></p>
+                    </div>
+                </div>
+                <div class="category-box area-category-box am-hide">
+                    <div class="category-item">
+                        <h2 class="hd am-text-default area-hd">全部</h2>
+                        <p class="txt"><span>直溪镇</span><span>直溪镇</span><span>直溪镇</span><span>直溪镇</span></p>
+                    </div>
+                </div>
+                <div class="category-box area-category-box am-hide">
+                    <div class="category-item">
+                        <h2 class="hd am-text-default area-hd">全部</h2>
+                        <p class="txt"><span>溧城镇</span><span>溧城镇</span><span>溧城镇</span><span>溧城镇</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 筛选侧边栏内容 -->
+<<<<<<< HEAD
+<div id="doc-oc-demo1" class="am-offcanvas wrap-filter">
+    <div class="am-offcanvas-bar am-offcanvas-bar-flip sidebar">
+        <div class="am-offcanvas-content filter">
+=======
+<div id="my-offcanvas" class="am-offcanvas">
+    <div class="am-offcanvas-bar am-offcanvas-bar-flip sidebar">
+        <div class="am-offcanvas-content">
+>>>>>>> newbranch
+            <div class="filter-list">
+                <h2>筛选</h2>
+                <p>分期付</p>
+                <p><a href="#" class="active">全部</a><a href="#">支持</a><a href="#">不支持</a></p>
+                <p>退课保障</p>
+                <p><a href="#" class="active">全部</a><a href="#">支持</a><a href="#">不支持</a></p>
+            </div>
+<<<<<<< HEAD
+            <div class="filter-btn"><button>重置</button><button class="active">确认</button></div>
+=======
+            <div class="filter-btn"><button>重置</button><button class="active doc-oc-js" data-rel="close">确认</button></div>
+            <!--<button class="am-btn am-btn-primary doc-oc-js" data-rel="close">关闭侧边栏</button>-->
+>>>>>>> newbranch
+        </div>
+    </div>
+</div>
+<!-- E 导航栏 -->
+
+<!-- S主体内容-->
+<div class="wrapper">
+    <div id="mainPart">
+        <!-- S 机构列表 -->
+        <div class="am-g">
+            <div class="am-u-sm-4 am-margin-top-sm institution-img">
+                <img src="../../images/institution-list.png" alt="" class="am-img-responsive">
+            </div>
+            <div class="am-u-sm-8 institution-list">
+                <p class="am-text-default">黑天鹅培训</p>
+                <p class="am-text-sm am-margin-top-xs">吉他课程&nbsp;&nbsp;钢琴课程&nbsp;&nbsp;小提琴课程</p>
+                <p class="am-text-sm am-margin-top-xs"><span class="address">江苏省常州市武进区湖塘镇花园街广电路</span><i class="ellipsis"></i><span class="distance">2KM</span></p>
+                <p class="am-margin-top-xs"><span class="tip">小班授课</span><span class="tip am-margin-left-xs">专业老师</span><span class="tip am-margin-left-xs">常州市第一家</span></p>
+            </div>
+        </div>
+        <!-- 预约礼 -->
+        <div class="am-g">
+            <div class="am-u-sm-12 am-text-center am-margin-top">
+                <div>
+                    <span class="am-text-default appointment-gift">预约礼</span><i class="am-text-xl narrow"></i>
+                    <span class="am-text-default"><i class="gift"></i><i style="position:relative;top: -7px;">免费试听：少儿音乐培训课程</i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="divide"></div>
+        <div class="am-g">
+            <div class="am-u-sm-4 am-margin-top-sm institution-img">
+                <img src="../../images/institution-list.png" alt="" class="am-img-responsive">
+            </div>
+            <div class="am-u-sm-8 institution-list">
+                <p class="am-text-default">黑天鹅培训</p>
+                <p class="am-text-sm am-margin-top-xs">吉他课程&nbsp;&nbsp;钢琴课程&nbsp;&nbsp;小提琴课程</p>
+                <p class="am-text-sm am-margin-top-xs"><span class="address">江苏省常州市武进区湖塘镇花园街广电路</span><i class="ellipsis"></i><span class="distance">2KM</span></p>
+                <p class="am-margin-top-xs"><span class="tip">小班授课</span><span class="tip am-margin-left-xs">专业老师</span><span class="tip am-margin-left-xs">常州市第一家</span></p>
+            </div>
+        </div>
+        <!-- 预约礼 -->
+        <div class="am-g">
+            <div class="am-u-sm-12 am-text-center am-margin-top">
+                <div>
+                    <span class="am-text-default appointment-gift">预约礼</span><i class="am-text-xl narrow"></i>
+                    <span class="am-text-default"><i class="gift"></i><i style="position:relative;top: -7px;">免费试听：少儿音乐培训课程</i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="divide"></div>
+        <div class="am-g">
+            <div class="am-u-sm-4 am-margin-top-sm institution-img">
+                <img src="../../images/institution-list.png" alt="" class="am-img-responsive">
+            </div>
+            <div class="am-u-sm-8 institution-list">
+                <p class="am-text-default">黑天鹅培训</p>
+                <p class="am-text-sm am-margin-top-xs">吉他课程&nbsp;&nbsp;钢琴课程&nbsp;&nbsp;小提琴课程</p>
+                <p class="am-text-sm am-margin-top-xs"><span class="address">江苏省常州市武进区湖塘镇花园街广电路</span><i class="ellipsis"></i><span class="distance">2KM</span></p>
+                <p class="am-margin-top-xs"><span class="tip">小班授课</span><span class="tip am-margin-left-xs">专业老师</span><span class="tip am-margin-left-xs">常州市第一家</span></p>
+            </div>
+        </div>
+        <!-- 预约礼 -->
+        <div class="am-g">
+            <div class="am-u-sm-12 am-text-center am-margin-top">
+                <div>
+                    <span class="am-text-default appointment-gift">预约礼</span><i class="am-text-xl narrow"></i>
+                    <span class="am-text-default"><i class="gift"></i><i style="position:relative;top: -7px;">免费试听：少儿音乐培训课程</i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="divide"></div>
+        <div class="am-g">
+            <div class="am-u-sm-4 am-margin-top-sm institution-img">
+                <img src="../../images/institution-list.png" alt="" class="am-img-responsive">
+            </div>
+            <div class="am-u-sm-8 institution-list">
+                <p class="am-text-default">黑天鹅培训</p>
+                <p class="am-text-sm am-margin-top-xs">吉他课程&nbsp;&nbsp;钢琴课程&nbsp;&nbsp;小提琴课程</p>
+                <p class="am-text-sm am-margin-top-xs"><span class="address">江苏省常州市武进区湖塘镇花园街广电路</span><i class="ellipsis"></i><span class="distance">2KM</span></p>
+                <p class="am-margin-top-xs"><span class="tip">小班授课</span><span class="tip am-margin-left-xs">专业老师</span><span class="tip am-margin-left-xs">常州市第一家</span></p>
+            </div>
+        </div>
+        <!-- 预约礼 -->
+        <div class="am-g">
+            <div class="am-u-sm-12 am-text-center am-margin-top">
+                <div>
+                    <span class="am-text-default appointment-gift">预约礼</span><i class="am-text-xl narrow"></i>
+                    <span class="am-text-default"><i class="gift"></i><i style="position:relative;top: -7px;">免费试听：少儿音乐培训课程</i></span>
+                </div>
+            </div>
+        </div>
+        <!-- E 机构列表 -->
+    </div>
+</div>
+<!-- E主体内容-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="../../js/lib/jquery-1.12.1.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="../../assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!-- 引入外部JS -->
+<script src="../../assets/js/amazeui.min.js"></script>
+<script src="../../js/lib/iscroll.js"></script>
+<script src="../../js/lib/demoUtils.js"></script>
+<script src="../../js/appraise/appraise.js"></script>
+<script src="../../js/course/institution-fixed.js"></script>
+<!-- 滑屏事件-->
+<script type="text/javascript">
+    var myScroll_1;
+    function loaded () {
+        // 主页内容
+        myScroll_1 = new IScroll('.wrapper');
+    }
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+        capture: false,
+        passive: false
+    } : false);
+</script>
+<<<<<<< HEAD
+=======
+<script>
+    $(function() {
+        var id = '#my-offcanvas';
+        var $myOc = $(id);
+        $('.doc-oc-js').on('click', function() {
+            $myOc.offCanvas($(this).data('rel'));
+        });
+    });
+</script>
+>>>>>>> newbranch
+</body>
+</html>

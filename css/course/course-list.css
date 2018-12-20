@@ -1,0 +1,39 @@
+@charset "UTF-8";
+body{
+    overflow: hidden;
+    font-family:PingFang,SourceHanSansN,"宋体";
+}
+.stars{
+    color: #fd962f;
+    font-family:sans-serif;
+    font-size: 2rem;
+}
+.institution-tab{
+    color: #ff4141;
+}
+
+/* 课程列表 */
+.address{
+    display: inline-block;
+    width:145px;
+    height:20px;
+    overflow: hidden;
+    font-size:1.3rem;
+    font-weight:500;
+}
+.ellipsis:after{
+    display: inline;
+    content: "...";
+    font-size:16px;
+    font-family:PingFang;
+    font-weight:500;
+}
+.category-box{
+    padding:0 10px 0 10px;
+}
+.category-main .category-right, .area-main .category-right{
+    height:542px;
+}
+.down-list{
+    top:175px;
+}

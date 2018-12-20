@@ -1,0 +1,479 @@
+@charset "UTF-8";
+/* 重置样式 */
+* {
+    -webkit-tap-highlight-color: transparent;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+img {
+    border: 0 none;
+    vertical-align: top;
+}
+
+i, em {
+    font-style: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+input, select, button, h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-family: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 640px;
+    height: 100%;
+    font-size: 12px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    /* 控制iPhone和Android自动调整字体大小 */
+    -webkit-text-size-adjust: 100% !important;
+    text-size-adjust: 100% !important;
+}
+
+input[type="text"], textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+/* E 重置样式 */
+
+/* S 公共样式 */
+.vs-hide {
+    visibility: hidden;
+}
+
+.red {
+    color: #f00;
+}
+
+.orange{
+    color: #ff962f;
+}
+
+.ft-16 {
+    font-size: 16px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mb10{
+    margin-bottom:10px;
+}
+.mb60{
+    margin-bottom:60px;
+    padding-bottom:25px;
+}
+.center {
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+.white{
+    color: #fff;
+}
+
+/* 遮罩层 */
+.mask{
+    position: fixed;
+    background: rgba(0,0,0,.8);
+    width:100%;
+    height:100%;
+    left: 0px;
+    top: 62px;
+    z-index: 10;
+}
+
+/* 底部导航 */
+.common-icon{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    background:url("../images/sprite.png") -81px -436px no-repeat;
+}
+.foot-icon2{
+    background-position: -82px -475px;
+}
+.foot-icon3{
+    background-position: -81px -512px;
+}
+.foot-icon4{
+    background-position: -81px -540px;
+}
+.index-icon{
+    background-position: -83px -395px;
+}
+.collage-icon{
+    background-position: -142px -398px;
+}
+.appraise-icon{
+    background-position: -177px -394px;
+}
+.person-icon{
+    background-position: -111px -394px;
+}
+.foot-nav{
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    max-width:640px;
+    /*height:70px;*/
+    padding:5px 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 5px #949494;;
+    -moz-box-shadow: 0 0 5px #949494;;
+    box-shadow: 0 0 5px #949494;;
+    z-index: 1;
+}
+.foot-nav p a{
+    color: #847e81;
+    font-size:1.4rem;
+    font-family:SourceHanSansN;
+}
+.foot-nav .ico{
+    color: #ccc;
+    margin-top:5px;
+}
+.circle{
+    width:50px;
+    height:50px;
+    margin-top:5px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+.foot-nav .active{
+    /*background-color: #a4b3c1;*/
+    color: red;
+}
+.common-style{
+    font-weight: 700;
+    font-style: normal;
+    /*font-size: 18px;*/
+}
+.no-padding{
+    padding:0;
+}
+.border50{
+    border-radius: 10px;
+}
+.no-border{
+    border:0!important;
+    outline:none!important;
+}
+.grey{
+    color: #949494;
+}
+
+/* 表单验证样式 */
+.confirmation-false {
+    background: url(../images/false.jpg) 0px 0px no-repeat;
+    -webkit-background-size: 20px;
+    background-size: 20px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    top: 10px;
+    z-index: 999;
+}
+.confirmation-true {
+    background: url(../images/true.jpg) 0px 0px no-repeat;
+    -webkit-background-size: 20px;
+    background-size: 20px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    top: 10px;
+    z-index: 999;
+}
+
+/* E 公共样式 */
+
+/* S 拼团和口碑的公共样式 */
+/* 导航栏 */
+.header {
+    width: 100%;
+    /*height: 100%;*/
+    max-width:640px;
+    height:60px;
+    position: fixed;
+    /*left:0;*/
+    /*right:0;*/
+    top:0;
+    background: #fff;
+    z-index:999;
+    cursor: pointer;
+}
+
+.nav {
+    background-color: #fff;
+    z-index: 1000;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+    line-height: 62px;
+    cursor: pointer;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* 细分割线 */
+.separate {
+    margin: 10px 0;
+    height:1px;
+    background-color: #eee;
+}
+
+/* 粗分割线 */
+.divide{
+    border:3px solid #eee;
+    margin:15px 0;
+}
+
+/* 下拉列表 */
+.am-dropdown-content {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.am-dropdown-content:after, .am-dropdown-content:before {
+    border: none;
+}
+
+/* 综合 */
+.comprehensive-main{
+    display: none;
+}
+.common-Spinner {
+    background-color: #fff;
+    z-index: 10;
+    width: 95px;
+    position: fixed;
+    top:60px;
+}
+
+.Spinner {
+    /*margin-left: -32px;*/
+}
+
+.Spinner1 {
+    margin-left: -135px;
+    background-color: #f4f6f8;
+    height: 1000px;
+    position: fixed;
+}
+
+.Spinner1 li.act {
+    background-color: #fff;
+}
+
+.common-Spinner li {
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #d4dbe1;;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* 类别、区域 */
+.show1 {
+    display: block !important;
+}
+
+.category-main, .area-main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*padding-top: 10px;*/
+    background: #fff;
+    z-index: 1;
+    /*display: none;*/
+    overflow: hidden;
+}
+
+.category-main .category-left, .area-main .category-left {
+    width: 90px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: fixed;
+
+}
+
+.category-left ul {
+    width: 90px;
+}
+
+.category-left ul li {
+    width: 90px;
+    height: 50px;
+    line-height: 50px;
+    background: #f3f4f5;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.category-left ul li.now {
+    background-color: #fff;
+    border-right: 0;
+}
+
+.category-left ul li a {
+    display: block;
+    width: 100%;
+    font-size:1.4rem;
+}
+.category-main .category-right,
+.area-main .category-right {
+    margin-left:90px;
+    height:400px;
+    /*overflow-y: hidden;*/
+}
+
+.category-box {
+    padding: 0 10px;
+    /*height:420px;*/
+}
+
+.category-item {
+    padding: 5px 0;
+}
+
+.category-item .txt {
+    line-height: 40px;
+    font-size: 1.2rem;
+}
+.category-item .txt span{
+    margin:0 10px;
+}
+
+/* 筛选 */
+.sidebar {
+    z-index: 10001;
+    width: 85%;
+    background-color: #fff;
+    border-left: 0;
+}
+
+.am-offcanvas-bar:after {
+    background: #fff;
+}
+
+.wrap-filter {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.filter-list{
+    position: absolute;
+<<<<<<< HEAD
+    height: 100%;
+=======
+    /*height: 100%;*/
+>>>>>>> newbranch
+    top: 0;
+    background-color: #fff;
+    z-index: 4;
+    padding: 25px 0px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+.filter-list h2 {
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 28px;
+}
+
+.filter-list p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.filter-list p a {
+    display: inline-block;
+    border: 0;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 15px;
+    border-radius: 12px;
+    margin: 0 10px 10px 0;
+    background-color: #f0f3f6;
+    color: #666;
+    font-size: 12px;
+    outline: none;
+}
+
+.filter-list p a.active {
+    border: 1px solid #f5a00a;
+    background: #fef1da;
+    color: #f5a00a;
+    font-size: 12px;
+}
+.filter-btn{
+    position: absolute;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    height: 44px;
+    z-index: 5;
+}
+.filter-btn button{
+    width: 50%;
+    height: 44px;
+    border: 0;
+    background-color: #fff;
+    text-align: center;
+    line-height: 44px;
+    color: #666;
+    font-size: 14px;
+    float: left;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.filter-btn button.active{
+    border-top: 1px solid #f5a00a;
+    border-bottom: 1px solid #f5a00a;
+    background-color: #f5a00a;
+    color: #fff;
+}
+.down-list{
+    display: none;
+    top:-11px;
+}
+/* E 拼团和口碑的公共样式 */

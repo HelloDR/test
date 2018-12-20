@@ -1,0 +1,615 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>拼团</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="../../assets/i/favicon.png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../../assets/i/app-icon72x72@2x.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="../../assets/i/app-icon72x72@2x.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="stylesheet" href="../../assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/collage/collage.css">
+    <!-- 滑动区样式 -->
+    <style>
+        .wrapper{
+            position: relative;
+            height:420px;
+            -ms-touch-action: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-text-size-adjust: none;
+            -moz-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            -o-text-size-adjust: none;
+            text-size-adjust: none;
+        }
+        #category-right,#category-left,#area_left,#area_right{
+            position: relative;
+            height:400px;
+            -ms-touch-action: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-text-size-adjust: none;
+            -moz-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            -o-text-size-adjust: none;
+            text-size-adjust: none;
+        }
+        #mainPart,#wrapper_box,#wrapper_ul,#area_wrapper,#area_ul{
+            /*position: absolute;*/
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+            /*z-index: -1;*/
+        }
+    </style>
+</head>
+<body onload="loaded()">
+<!-- S 导航栏 -->
+<div class="header">
+    <div class="am-g center nav">
+        <p class="am-u-sm-3 com-class" id="comprehensive">
+            <span class="am-text-lg">综合 <i class="am-icon-caret-down"></i></span>
+        </p>
+        <p class="am-u-sm-3 com-class" id="category">
+            <span class="am-text-lg">类别 <i class="am-icon-caret-down"></i></span>
+        </p>
+        <p class="am-u-sm-3 com-class" id="area">
+            <span class="am-text-lg">区域<i class="am-icon-caret-down"></i></span>
+        </p>
+        <div class="am-u-sm-3" id="filter">
+<<<<<<< HEAD
+            <a href="#doc-oc-demo1" data-am-offcanvas><span class="am-text-lg">筛选<span class="am-icon-caret-down"></span></span></a>
+=======
+            <a class="doc-oc-js" data-rel="open"><span class="am-text-lg">筛选<span class="am-icon-caret-down"></span></span></a>
+>>>>>>> newbranch
+        </div>
+    </div>
+</div>
+<!-- E 导航栏 -->
+
+<!-- S 导航栏内容-->
+<div>
+    <!-- 综合内容 -->
+    <div class="down-list" id="comprehensive-main">
+        <div class="mask" id="mask"></div>
+        <ul class="Spinner common-Spinner">
+            <li><a href="#">距离最近</a></li>
+            <li><a href="#">综合排序</a></li>
+        </ul>
+    </div>
+    <!-- 类别二级菜单内容 -->
+    <div class="category-main down-list" id="category-main">
+        <div class="category-left" id="category-left">
+            <div id="wrapper_ul">
+                <ul>
+                    <li class="now"><a href="#">艺术.兴趣</a></li>
+                    <li><a href="#">学前.小学</a></li>
+                    <li><a href="#">其他</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="category-right" id="category-right">
+            <div id="wrapper_box">
+                <div class="category-box">
+                    <div class="category-item">
+                        <h2 class="hd">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">
+                            爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">
+                            爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">
+                            爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">
+                            爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">
+                            爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">
+                            爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                </div>
+                <div class="category-box am-hide">
+                    <div class="category-item">
+                        <h2 class="hd">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">
+                            爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">
+                            爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">
+                            爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                </div>
+                <div class="category-box am-hide">
+                    <div class="category-item">
+                        <h2 class="hd">舞蹈</h2>
+                        <p class="txt">名族舞&nbsp;&nbsp;&nbsp;&nbsp;拉丁舞&nbsp;&nbsp;&nbsp;&nbsp;芭蕾</p>
+                        <p class="txt">
+                            爵士舞&nbsp;&nbsp;&nbsp;&nbsp;街舞&nbsp;&nbsp;&nbsp;&nbsp;成品舞&nbsp;&nbsp;&nbsp;&nbsp;其他</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 区域二级菜单内容 -->
+    <div class="area-main down-list" id="area-main">
+        <div class="category-left area-category-left" id="area_left">
+            <div id="area_ul">
+                <ul>
+                    <li class="now"><a href="#">全部</a></li>
+                    <li><a href="#">武进区</a></li>
+                    <li><a href="#">钟楼区</a></li>
+                    <li><a href="#">天宁区</a></li>
+                    <li><a href="#">新北区</a></li>
+                    <li><a href="#">金坛</a></li>
+                    <li><a href="#">溧阳</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="category-right" id="area_right">
+            <div id="area_wrapper">
+                <div class="category-box area-category-box">
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+
+                </div>
+                <div class="category-box area-category-box am-hide">
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                </div>
+                <div class="category-box area-category-box am-hide">
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                </div>
+                <div class="category-box area-category-box am-hide">
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                </div>
+                <div class="category-box area-category-box am-hide">
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                </div>
+                <div class="category-box area-category-box am-hide">
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                </div>
+                <div class="category-box area-category-box am-hide">
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                    <div class="category-item">
+                        <h2 class="hd">全部</h2>
+                        <p class="txt"><span>湖塘</span><span>科教城</span><span>大学城</span><span>长虹路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                        <p class="txt"><span>遥观</span><span>洛阳</span><span>嘉泽</span><span>滆湖路</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 筛选侧边栏内容 -->
+<<<<<<< HEAD
+<div id="doc-oc-demo1" class="am-offcanvas wrap-filter">
+    <div class="am-offcanvas-bar am-offcanvas-bar-flip sidebar">
+        <div class="am-offcanvas-content filter">
+=======
+<div id="my-offcanvas" class="am-offcanvas">
+    <div class="am-offcanvas-bar am-offcanvas-bar-flip sidebar">
+        <div class="am-offcanvas-content">
+>>>>>>> newbranch
+            <div class="filter-list">
+                <h2>筛选</h2>
+                <p>分期付</p>
+                <p><a href="#" class="active">全部</a><a href="#">支持</a><a href="#">不支持</a></p>
+                <p>退课保障</p>
+                <p><a href="#" class="active">全部</a><a href="#">支持</a><a href="#">不支持</a></p>
+            </div>
+<<<<<<< HEAD
+            <div class="filter-btn">
+                <button>重置</button>
+                <button class="active">确认</button>
+            </div>
+=======
+            <div class="filter-btn"><button>重置</button><button class="active doc-oc-js" data-rel="close">确认</button></div>
+            <!--<button class="am-btn am-btn-primary doc-oc-js" data-rel="close">关闭侧边栏</button>-->
+>>>>>>> newbranch
+        </div>
+    </div>
+</div>
+<!--E 导航栏内容 -->
+
+<!-- S 主体内容 -->
+<div class="wrapper">
+    <div id="mainPart">
+        <div class="am-g main">
+            <div class="am-u-sm-6 user">
+                <img src="../../images/placeholder.jpg" alt="">
+                <span>赵先生</span>
+            </div>
+            <div class="am-u-sm-6 tip-txt">
+                <span class="am-text-sm">已有3人成团，还缺2人</span>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-margin-vertical-sm">
+                <p class="am-text-default">课程很不错，很值得推荐过来学习一下</p>
+            </div>
+            <div class="am-u-sm-12">
+                <img src="../../images/placeholder.jpg" alt="" class="main-img am-img-responsive am-padding-vertical-xs">
+            </div>
+            <div class="am-u-sm-12">
+                <div class="am-u-sm-6 icon">
+                    <i class="am-icon-heart am-icon-sm"></i>
+                    <span>888</span>&nbsp;&nbsp;
+                    <i class="am-icon-comment am-icon-sm"></i>
+                    <span>666</span>
+                </div>
+                <div class="am-u-sm-6 join-btn">
+                    <button>我要参团</button>
+                </div>
+            </div>
+            <div class="am-u-sm-12 divide">
+
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-6 user">
+                <img src="../../images/placeholder.jpg" alt="">
+                <span>赵先生</span>
+            </div>
+            <div class="am-u-sm-6 tip-txt">
+                <span class="am-text-sm">已有3人成团，还缺2人</span>
+            </div>
+            <div class="am-u-sm-12 am-margin-vertical-sm">
+                <p class="am-text-default">课程很不错，很值得推荐过来学习一下</p>
+            </div>
+            <div class="am-u-sm-12">
+                <img src="../../images/placeholder.jpg" alt="" class="main-img am-img-responsive am-padding-vertical-xs">
+            </div>
+            <div class="am-u-sm-12">
+                <div class="am-u-sm-6 icon">
+                    <i class="am-icon-heart am-icon-sm"></i>
+                    <span>888</span>&nbsp;&nbsp;
+                    <i class="am-icon-comment am-icon-sm"></i>
+                    <span>666</span>
+                </div>
+                <div class="am-u-sm-6 join-btn">
+                    <button>我要参团</button>
+                </div>
+            </div>
+            <div class="am-u-sm-12 divide">
+
+            </div>
+        </div>
+        <div class="am-g mb60">
+            <div class="am-u-sm-6 user">
+                <img src="../../images/placeholder.jpg" alt="">
+                <span>赵先生</span>
+            </div>
+            <div class="am-u-sm-6 tip-txt">
+                <span class="am-text-sm">已有3人成团，还缺2人</span>
+            </div>
+            <div class="am-u-sm-12 am-margin-vertical-sm">
+                <p class="am-text-default">课程很不错，很值得推荐过来学习一下</p>
+            </div>
+            <div class="am-u-sm-12">
+                <img src="../../images/placeholder.jpg" alt="" class="main-img am-img-responsive am-padding-vertical-xs">
+            </div>
+            <div class="am-u-sm-12">
+                <div class="am-u-sm-6 icon">
+                    <i class="am-icon-heart am-icon-sm"></i>
+                    <span>888</span>&nbsp;&nbsp;
+                    <i class="am-icon-comment am-icon-sm"></i>
+                    <span>666</span>
+                </div>
+                <div class="am-u-sm-6 join-btn">
+                    <button>我要参团</button>
+                </div>
+            </div>
+            <div class="am-u-sm-12 divide">
+
+            </div>
+        </div>
+        <!-- E 主体内容 -->
+    </div>
+</div>
+<!-- E 主体内容-->
+
+<!-- S 底部导航 -->
+<div class="am-g foot-nav">
+    <div class="am-u-sm-3 center">
+        <!--<p class="am-icon-home am-icon-lg ico"></p>-->
+        <p><i class="common-icon"></i></p>
+        <p><a href="../../index.html">选课</a></p>
+    </div>
+    <div class="am-u-sm-3 center">
+        <!--<p class="am-icon-commenting am-icon-lg ico"></p>-->
+        <p><i class="common-icon foot-icon2"></i></p>
+        <p><a href="../appraise/appraise.html">口碑</a></p>
+    </div>
+    <div class="am-u-sm-3 center">
+        <!--<p class="am-icon-shopping-cart am-icon-lg ico active"></p>-->
+        <p><i class="common-icon foot-icon3 collage-icon"></i></p>
+        <p><a href="collage.html" class="active">拼团</a></p>
+    </div>
+    <div class="am-u-sm-3 center">
+        <!--<p class="am-icon-user am-icon-lg ico"></p>-->
+        <p><i class="common-icon foot-icon4"></i></p>
+        <p><a href="../personal/person-center.html">我的</a></p>
+    </div>
+</div>
+<!-- E 底部导航 -->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="../../js/lib/jquery-1.12.1.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="../../assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!-- 引入外部JS -->
+<script src="../../assets/js/amazeui.min.js"></script>
+<script src="../../js/appraise/appraise.js"></script>
+<script src="../../js/lib/iscroll.js"></script>
+<script src="../../js/lib/demoUtils.js"></script>
+<!-- 滑动区域JS -->
+<script type="text/javascript">
+    var myScroll_1,myScroll_2,myScroll_3,myScroll_4,myScroll_5;
+    function loaded () {
+        // 主页内容
+        myScroll_1 = new IScroll('.wrapper');
+    }
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+        capture: false,
+        passive: false
+    } : false);
+</script>
+<<<<<<< HEAD
+=======
+<script>
+    $(function() {
+        var id = '#my-offcanvas';
+        var $myOc = $(id);
+        $('.doc-oc-js').on('click', function() {
+            $myOc.offCanvas($(this).data('rel'));
+        });
+    });
+</script>
+>>>>>>> newbranch
+</body>
+</html>

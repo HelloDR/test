@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.my-integral{
+    background: url(../../images/integral.png) 0 0 no-repeat;
+    height:200px;
+    color: #fff;
+    text-align: center;
+}
+.pt50{
+    padding-top:50px;
+}
+.dropdown{
+    min-width:80px;
+    line-height:2.6;
+}
+.border-bottom{
+    border-bottom:1px solid #E4E4E4;
+}

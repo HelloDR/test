@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>机构入驻</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="../../assets/i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../../assets/i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="../../assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <link rel="stylesheet" href="../../assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/personal/institution-enter.css">
+</head>
+<body>
+<!-- 头部 -->
+<div class="am-g">
+    <div class="am-u-sm-12 am-padding-0 header">
+        <img src="../../images/institution-enter.jpg" alt="" class="am-img-responsive">
+    </div>
+</div>
+<div class="am-g institution-form">
+    <form class="am-form am-form-horizontal am-margin-top-sm" id="institution_form">
+        <!-- am-form-group 的基础上添加了 am-form-group-sm -->
+        <div class="am-form-group am-form-group-lg line">
+            <label for="doc-ipt-3-1" class="am-u-sm-4 am-text-lg am-margin-top-xs">机构名称:</label>
+            <p class="am-u-sm-8">
+                <input type="text" id="doc-ipt-3-1" class="am-form-field institution-name" placeholder="请输入机构名称" required>
+            </p>
+        </div>
+        <div class="am-form-group am-form-group-lg line">
+            <label for="doc-ipt-3-2" class="am-u-sm-4 am-text-lg am-margin-top-xs">所受课程:</label>
+            <p class="am-u-sm-8">
+                <input type="text" id="doc-ipt-3-2" class="am-form-field teach-course" placeholder="如:艺术教育、学前教育..." required>
+            </p>
+        </div>
+        <div class="am-form-group am-form-group-lg line">
+            <label for="doc-ipt-3-3" class="am-u-sm-4 am-text-lg am-margin-top-xs">机构电话:</label>
+            <p class="am-u-sm-8">
+                <input type="text" id="doc-ipt-3-3" class="am-form-field institution-tel" placeholder="请输入联系电话" required>
+            </p>
+        </div>
+        <div class="am-form-group am-form-group-lg line">
+            <label for="doc-ipt-3-4" class="am-u-sm-4 am-text-lg am-margin-top-xs">机构地址:</label>
+            <p class="am-u-sm-8">
+                <input type="text" id="doc-ipt-3-4" class="am-form-field institution-address" placeholder="省份-城市-区县-商圈" required>
+            </p>
+        </div>
+        <div class="am-form-group am-form-group-lg line">
+            <label for="doc-ipt-3-5" class="am-u-sm-4 am-text-lg am-margin-top-xs">详细地址:</label>
+            <p class="am-u-sm-8">
+                <input type="text" id="doc-ipt-3-5" class="am-form-field detail-address" placeholder="请输入详细地址" required>
+            </p>
+        </div>
+        <div class="am-u-sm-12 divide"></div>
+        <div class="am-form-group am-form-group-lg line">
+            <label for="doc-ipt-3-6" class="am-u-sm-4 am-text-lg am-margin-top-xs">注册手机:</label>
+            <p class="am-u-sm-8">
+                <input type="text" id="doc-ipt-3-6" class="am-form-field register-phone" placeholder="" required>
+            </p>
+        </div>
+        <div class="am-form-group am-form-group-lg line">
+            <label for="doc-ipt-3-7" class="am-u-sm-3 am-text-lg am-margin-top-xs">验证码:</label>
+            <p class="am-u-sm-4">
+                <input type="text" id="doc-ipt-3-7" class="am-form-field" placeholder="" required>
+            </p>
+            <div class="am-u-sm-5 am-margin-right-0">
+                <img src="../../images/erweima.png" alt="">
+            </div>
+        </div>
+        <div class="am-form-group am-form-group-lg line">
+            <div class="am-u-sm-12">
+                <input type="submit"  class="am-form-field submit-btn" value="提交信息">
+            </div>
+        </div>
+    </form>
+</div>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="../../js/lib/jquery-1.12.1.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="../../assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!-- 引入外部JS -->
+<script src="../../assets/js/amazeui.min.js"></script>
+<script src="../../js/personal/login.js"></script>
+</body>
+</html>

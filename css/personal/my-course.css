@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* 导航菜单 */
+.course-nav{
+    border-bottom:1px solid #f0f1f5;
+    text-align: center;
+    padding:0 35px;
+}
+.course-nav .active{
+    border-bottom:1px solid #ff4141;
+    color: #f00;
+}

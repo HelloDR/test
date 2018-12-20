@@ -1,0 +1,72 @@
+@charset "UTF-8";
+body{
+    overflow: hidden;
+    font-family:PingFang;
+}
+/* 拼团页面样式 */
+.main{
+    margin-top:70px;
+    /*margin-bottom:50px;*/
+}
+.user img{
+   width: 60px;
+    height:60px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+.user span{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height:55px;
+    margin-left:5px;
+}
+.tip-txt{
+    line-height:50px;
+    text-align: right;
+}
+.tip-txt span{
+    color: #ddd;
+    font-weight:bold;
+    margin-top:20px;
+}
+.main-img{
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px;
+    border-radius:12px;
+}
+.icon{
+    color: #888;
+    margin:10px 0 0px -12px;
+}
+.join-btn{
+    text-align: right;
+    margin:10px 10px 0 0;
+}
+.join-btn button{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(255, 0, 0, 1);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size:16px;
+}
+
+/* 其他 */
+.category-main, .area-main{
+    height:542px;
+}
+.category-main .category-right, .area-main .category-right {
+    height: 100%;
+    margin-left: 90px;
+    /*padding-bottom:112px;*/
+}
+.category-main .category-left ul li a:hover, .area-main .category-left ul li a:hover{
+    color: #666;
+}
+.down-list{
+    top:-10px;
+}
