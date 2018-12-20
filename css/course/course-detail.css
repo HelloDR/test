@@ -4,6 +4,7 @@ img{
     width:100%;
 }
 .top-banner{
+    height:235px;
     position: relative;
     border-bottom:5px solid #f0f1f5;
 }
