@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* 卷包导航栏 */
+.package-nav{
+    border-bottom:1px solid #f0f1f5;
+}
+.package-nav div{
+    /*width:80px;*/
+}
+.package-nav .active{
+    border-bottom:1px solid #ff4141;
+}
+
+/* 未使用 */
+.not-use .discount-img{
+    height:101px;
+    background: url(../../images/discount-bg.png) 0 0 no-repeat;
+    -webkit-background-size:112px;
+    background-size:100%;
+    color: #fff;
+}
+.discount-right{
+    border-top:1px solid #f0f1f5;
+    border-bottom:1px solid #f0f1f5;
+    border-right:1px solid #f0f1f5;
+    border-radius:8px;
+}
+.discount-right .pass-date{
+    border-bottom:1px dashed #f0f1f5;
+}
+
+/* 已使用 */
+.already-use .discount-img{
+    height:101px;
+    background: url(../../images/already-use.png) 0 0 no-repeat;
+    -webkit-background-size:112px;
+    background-size:100%;
+    color: #fff;
+}
+.already-use .discount-right{
+    color: #b0b0b0;
+}
+.expire .discount-right{
+    background: url(../../images/discount-tip.png) 170px 40px no-repeat;
+    -webkit-background-size:60px;
+    background-size:60px;
+}

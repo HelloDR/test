@@ -1,0 +1,89 @@
+@charset "UTF-8";
+body{
+    overflow: hidden;
+}
+img{
+    width:100%;
+}
+#app{
+    overflow-y:scroll;
+    height: 660px;
+}
+/* 头部轮播图片 */
+.top-banner{
+    position: relative;
+    border-bottom:5px solid #f0f1f5;
+}
+.top-banner ul li a img{
+    width:100%;
+}
+.count{
+    width:75px;
+    height:30px;
+    background-color: #342e22;
+    color: #fff;
+    text-align: center;
+    line-height:30px;
+    position: absolute;
+    right:10px;
+    bottom:20px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+}
+.am-slider-desc{
+    background: rgba(0,0,0,0)!important;
+}
+
+/* 免费试听 */
+.free-listen{
+    border-bottom:1px solid #eef2f5;
+    padding-left:40px;
+}
+.icon{
+    display: inline-block;
+    width:28px;
+    height:28px;
+    background:url(../../images/sprite.png) -82px -188px no-repeat;
+    position: relative;
+    top:5px;
+}
+.right-narrow{
+    position: relative;
+    top: 3px;
+    left: 5px;
+    font-weight: 500;
+}
+
+/* 特色体验 */
+.icon2{
+    background-position: -82px -234px;
+}
+.icon3{
+    background-position: -82px -280px;
+}
+
+/* 选项卡 */
+.tab ul li{
+    display: inline-block;
+    cursor: pointer;
+    width:85px;
+    height:30px;
+}
+.tab ul li i.now{
+    display: block;
+    width:50px;
+    height: 1px;
+    border:1px solid #ff4141;
+    position: relative;
+    left:18px;
+    top:5px;
+}
+
+/* 查看更多团购 */
+.more-collage{
+    display: none;
+}
+#more_collage{
+    cursor: pointer;
+}

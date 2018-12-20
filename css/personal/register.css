@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/**
+ * @desc 表单样式
+ * @date 2018-11-8
+ */
+
+/* 头部样式 */
+.logo{
+    width:67px;
+    height:67px;
+}
+.logo-txt{
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+}
+
+/* 表单主体样式 */
+
+.ml-70{
+    margin-left: 70px;
+}
+.mt30{
+    margin-top: 30px;
+}
+.mb30{
+    margin-bottom: 30px;
+}
+input{
+    border:0;
+    background: none;
+    outline:none;
+    color: grey!important;
+}
+.name{
+    background-color: #f7f6f9;
+}
+.center{
+    text-align: center;
+}
+.address{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.confirmation-true{
+    background: url(../../images/true.jpg) 0px 0px no-repeat;
+    -webkit-background-size:20px;
+    background-size:20px;
+    position: absolute;
+    width:30px;
+    height: 30px;
+    right:15px;
+    top: 10px;
+    z-index: 999;
+
+}
+.confirmation-false{
+    background: url(../../images/false.jpg) 0px 0px no-repeat;
+    -webkit-background-size:20px;
+    background-size:20px;
+    position: absolute;
+    width:30px;
+    height: 30px;
+    right:15px;
+    top: 10px;
+    z-index: 999;
+
+}
+.tip-img{
+    background: url(../../images/tip.jpg) 0px 0px no-repeat;
+    -webkit-background-size:20px;
+    background-size:20px;
+    position: relative;
+    width:30px;
+    height: 30px;
+    top: 13px;
+    display: inline-block;
+}

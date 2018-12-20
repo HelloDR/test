@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* 收藏的导航栏 */
+.icon{
+    width:28px;
+    height:26px;
+    display: inline-block;
+    background: url(../../images/sprite.png) -8px -551px no-repeat;
+    margin-left:-9px;
+}
+.icon2{
+    background: url(../../images/sprite.png) -8px -585px no-repeat;
+}
+.collect1{
+    width: 106px;
+    padding: 0;
+    margin-left: 45px;
+}
+.collect2{
+    width: 106px;
+    padding: 0;
+    margin-right: 45px;
+}
+.nav-active{
+    border-bottom: 1px solid #ff4141;
+}
+.course-collect-txt{
+    position: relative;
+    top: -5px;
+    left:5px;
+}
+
+/* 收藏列表 */
+.list-txt{
+    margin-left:-15px;
+}
