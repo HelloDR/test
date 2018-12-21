@@ -7,29 +7,22 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>口碑</title>
-
     <!-- Set render engine for 360 browser -->
     <meta name="renderer" content="webkit">
-
     <!-- No Baidu Siteapp-->
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
-
     <link rel="icon" type="image/png" href="../../assets/i/favicon.png">
-
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="../../assets/i/app-icon72x72@2x.png">
-
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
     <link rel="apple-touch-icon-precomposed" href="../../assets/i/app-icon72x72@2x.png">
-
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
     <meta name="msapplication-TileColor" content="#0e90d2">
-
     <link rel="stylesheet" href="../../assets/css/amazeui.min.css">
     <link rel="stylesheet" href="../../assets/css/app.css">
     <link rel="stylesheet" href="../../css/common.css">
@@ -82,7 +75,7 @@
         }
     </style>
 </head>
-<body onload="loaded()">
+<body>
 <!--S 导航栏 -->
 <div class="header">
     <div class="am-g center nav">
@@ -436,22 +429,18 @@
 <!-- S 底部导航 -->
 <div class="am-g foot-nav">
     <div class="am-u-sm-3 active center">
-        <!--<p class="am-icon-home am-icon-lg ico am-text-default"></p>-->
         <p><i class="common-icon"></i></p>
         <p><a href="../../index.html" class="white am-text-default">选课</a></p>
     </div>
     <div class="am-u-sm-3 center">
-        <!--<p class="am-icon-commenting am-icon-lg active ico am-text-default"></p>-->
         <p><i class="common-icon foot-icon2 appraise-icon"></i></p>
         <p><a href="appraise.html" class="white active am-text-default">口碑</a></p>
     </div>
     <div class="am-u-sm-3 center">
-        <!--<p class="am-icon-shopping-cart am-icon-lg ico am-text-default"></p>-->
         <p><i class="common-icon foot-icon3"></i></p>
         <p><a href="../collage/collage.html" class="white am-text-default">拼团</a></p>
     </div>
     <div class="am-u-sm-3 center">
-        <!--<p class="am-icon-user am-icon-lg ico am-text-default"></p>-->
         <p><i class="common-icon foot-icon4"></i></p>
         <p><a href="../personal/person-center.html" class="white am-text-default">我的</a></p>
     </div>
@@ -469,29 +458,8 @@
 
 <!-- 引入外部JS -->
 <script src="../../assets/js/amazeui.min.js"></script>
-<script src="../../js/appraise/appraise.js"></script>
 <script src="../../js/lib/iscroll.js"></script>
 <script src="../../js/lib/demoUtils.js"></script>
-<script type="text/javascript">
-    var myScroll1,myScroll2,myScroll3,myScroll4,myScroll5;
-    function loaded () {
-        // 主页内容
-        myScroll1 = new IScroll('.wrapper');
-    }
-    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
-        capture: false,
-        passive: false
-    } : false);
-</script>
-<script>
-    $(function() {
-        var id = '#my-offcanvas';
-        var $myOc = $(id);
-        $('.doc-oc-js').on('click', function() {
-            $myOc.offCanvas($(this).data('rel'));
-        });
-
-    });
-</script>
+<script src="../../js/appraise/appraise.js"></script>
 </body>
 </html>

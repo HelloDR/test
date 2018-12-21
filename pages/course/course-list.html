@@ -88,7 +88,7 @@
         }
     </style>
 </head>
-<body onload="loaded()">
+<body>
 <div style="background-color: #fff">
     <!-- S 头部 -->
     <div id="topBar">
@@ -526,26 +526,5 @@
 <script src="../../js/lib/demoUtils.js"></script>
 <script src="../../js/appraise/appraise.js"></script>
 <script src="../../js/course/institution-fixed.js"></script>
-<!-- 滑屏事件-->
-<script type="text/javascript">
-    var myScroll_1;
-    function loaded () {
-        // 主页内容
-        myScroll_1 = new IScroll('.wrapper');
-    }
-    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
-        capture: false,
-        passive: false
-    } : false);
-</script>
-<script>
-    $(function() {
-        var id = '#my-offcanvas';
-        var $myOc = $(id);
-        $('.doc-oc-js').on('click', function() {
-            $myOc.offCanvas($(this).data('rel'));
-        });
-    });
-</script>
 </body>
 </html>

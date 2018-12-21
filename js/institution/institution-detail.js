@@ -12,17 +12,4 @@ $(function () {
             $(".more-collage").hide(100);
         }
     });
-    
-    // 选项卡切换
-    $("#photo").addClass('am-hide');
-    $("#tab_ul").children().on('click',function () {
-        var tabWrap=$("#tab_wrap"),
-            index=$(this).index();
-            th=$(this);
-        tabWrap.children('div').eq(index).removeClass('am-hide');
-        th.append('<i class="now"></i>');
-        th.siblings().children('i.now').remove();
-        th.siblings().css({color:'#000'});
-        tabWrap.children('div').eq(index).siblings().addClass('am-hide');
-    });
 });

@@ -4,7 +4,7 @@
     border-bottom:1px solid #f0f1f5;
 }
 .package-nav div{
-    /*width:80px;*/
+    cursor: pointer;
 }
 .package-nav .active{
     border-bottom:1px solid #ff4141;

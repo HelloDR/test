@@ -1,6 +1,22 @@
 /**
  * Created by 15345 on 2018/11/12.
  */
+// 需要对图片进行剪切，缩放操作时，需要网页所有的内容加载完毕后才执行的话，
+// 可以使用$(window).load()方法，这个方法会等到页面所有内容加载完毕后才会触发，
+// 并且同时没有onload事件属性的缺点。
+$(window).load(function() {
+    // 主体内容滑动事件
+    var myScroll1;
+    function loaded () {
+        // 主页内容
+        myScroll1 = new IScroll('.wrapper');
+    }
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+        capture: false,
+        passive: false
+    } : false);
+    loaded();
+});
 //遮罩层
 $(function () {
     function Scroll() {
@@ -90,6 +106,13 @@ $(function () {
         $(this).siblings().removeClass("now");
         // 调用区域滚动函数
         Scroll();
+    });
+    
+    // 侧边栏点击确定按钮关闭事件
+    var id = '#my-offcanvas';
+    var $myOc = $(id);
+    $('.doc-oc-js').on('click', function() {
+        $myOc.offCanvas($(this).data('rel'));
     });
 });
 

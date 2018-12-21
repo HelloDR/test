@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* 主体内容 */
 body{
-    /*overflow: hidden;*/
     font-family:PingFang;
 }
 .list {
@@ -29,7 +28,7 @@ body{
 .area-hd{
     color: #f5a00a;
 }
-/* 发口碑 */
+/* 发口碑按钮 */
 .publish-appraise a {
     position: fixed;
     right: 0px;
@@ -42,8 +41,38 @@ body{
     text-align: center;
     line-height: 87px;
 }
+/* 筛选区导航样式 */
+.category-main .category-left, .area-main .category-left {
+    width: 90px;
+    /*height: 100%;*/
+    height:510px;
+    float: left;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+.category-main .category-left ul li a:hover, .area-main .category-left ul li a:hover{
+    color: #666;
+}
+.category-main .category-right, .area-main .category-right {
+    height: 510px;
+    margin-left: 90px;
+    top:0;
+}
+.category-main, .area-main {
+    position: absolute;
+    width: 100%;
+    height: 610px;
+    padding-top: 73px;
+    background: #fff;
+    overflow: hidden;
+    z-index: 1;
+}
+.down-list{
+    top:-12px;
+}
 
-/* 发布评价页面样式 */
+/* 发布口碑页面样式   publish-appraise.css */
 /* 头部标题 */
 .header-title {
     font-weight: 700;
@@ -83,7 +112,6 @@ body{
     font-size: 200%;
     line-height: 1.2;
     color: #ddd;
-    /*text-shadow: 1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0, 0, 0, .5);*/
 }
 
 .rating:not(:checked) > label:before {
@@ -93,13 +121,11 @@ body{
 
 .rating > input:checked ~ label {
     color: #f70;
-    /*text-shadow: 1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0, 0, 0, .5);*/
 }
 
 .rating:not(:checked) > label:hover,
 .rating:not(:checked) > label:hover ~ label {
     color: gold;
-    /*text-shadow: 1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0, 0, 0, .5);*/
 }
 
 .rating > input:checked + label:hover,
@@ -108,7 +134,6 @@ body{
 .rating > input:checked ~ label:hover ~ label,
 .rating > label:hover ~ input:checked ~ label {
     color: #ea0;
-    /*text-shadow: 1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0, 0, 0, .5);*/
 }
 
 .rating > label:active {
@@ -116,12 +141,9 @@ body{
     top: 2px;
     left: 2px;
 }
-
-/* publish-appraise.css */
 /* 上传文件 */
 #delete_btn{
     position: absolute;
-    /* display: inline-block; */
     display: none;
     width: 26px;
     height: 28px;
@@ -135,7 +157,6 @@ body{
     height:100%;
 }
 .gallery{
-    /*width: 125px;*/
     height: 105px;
 }
 .img-item{
@@ -147,16 +168,11 @@ body{
     color: #fff;
 }
 .upload{
-    /*margin:20px 0;*/
     overflow: inherit;
 }
 .upload-wrap{
     border-bottom:11px solid rgba(242, 242, 242, 1);
     padding:20px 0;
-}
-.upload img{
-    /*width:80px;*/
-    /*height:95px;*/
 }
 .upload .upload-btn{
     margin-top:20px;
@@ -174,7 +190,9 @@ body{
     margin-top:25px;
     font-size: 1.4rem;
 }
-
+#file{
+    font-size:1rem;
+}
 /* 评价 */
 .appraise-area{
     text-align: center;
@@ -185,8 +203,7 @@ body{
     width:100%;
     height:122px;
 }
-
-/* 注册 */
+/* 发表口碑 */
 .reg-btn{
     padding:0 20px 20px 20px;
 }
@@ -196,39 +213,3 @@ body{
     border-radius:5px;
     font-size:13px;
 }
-#app{
-    overflow: hidden;
-    margin-top:63px;
-}
-.category-main .category-left, .area-main .category-left {
-    width: 90px;
-    /*height: 100%;*/
-    height:510px;
-    float: left;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-}
-.category-main .category-left ul li a:hover, .area-main .category-left ul li a:hover{
-    color: #666;
-}
-.category-main .category-right, .area-main .category-right {
-    height: 510px;
-    margin-left: 90px;
-     /*padding-bottom: 45px;*/
-    top:0;
-}
-.category-main, .area-main {
-    position: absolute;
-    width: 100%;
-    height: 610px;
-    padding-top: 73px;
-    background: #fff;
-    /* display: none; */
-    overflow: hidden;
-    z-index: 1;
-}
-.down-list{
-    top:-12px;
-}
-/*  区域 */

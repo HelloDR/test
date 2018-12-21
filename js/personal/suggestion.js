@@ -1,25 +1,12 @@
 /**
  * Created by 15345 on 2018/11/22.
  */
-// $(function () {
-//     $('#doc-form-file').on('change', function () {
-//         var fileNames = '';
-//         $.each(this.files, function () {
-//             //fileNames += '<span class="am-badge">' + this.name + '</span> ';
-//             fileNames += '<img src="../../images/' + this.name + '" width="100">';
-//             console.log(fileNames);
-//         });
-//         $('#file-list').html(fileNames);
-//     });
-// });
 // 上传图片信息
 $(function () {
-    //var files=[];
     var that = this;
     $("#upload").click(function(){
         $("#file").trigger("click");
     });
-
     $("#file").change(function(){
         document.getElementById("gallery").innerHTML="";
         var img=document.getElementById("file").files;
@@ -41,8 +28,6 @@ $(function () {
 
             var deleteIcon = document.createElement("span");
             deleteIcon.className = 'delete';
-            //deleteIcon.innerText = 'x';
-            //deleteIcon.className='am-icon am-icon-trash';
             deleteIcon.id='delete_btn';
             deleteIcon.dataset.filename = img[i].name;
             imgBox.appendChild(deleteIcon);

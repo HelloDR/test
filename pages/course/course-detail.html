@@ -32,7 +32,7 @@
 <body>
 <!--S 头部轮播图 -->
 <div class="am-g top-banner">
-    <div data-am-widget="slider" class="am-slider am-slider-c3" data-am-slider='{&quot;directionNav&quot;:false}' id="am_silder">
+    <div data-am-widget="slider" class="am-slider am-slider-c3" data-am-slider='{&quot;directionNav&quot;:false}' id="banner">
         <ul class="am-slides">
             <li style="height: 200px;">
                 <img src="../../images/course_detail.png">
@@ -134,21 +134,21 @@
 <!--S 选项卡 -->
 <div class="am-g tab-wrap">
     <div class="tab am-text-lg am-text-center">
-        <ul id="tab">
+        <ul id="tab_ul">
             <li>课程特色<i class="now"></i></li>
             <li>师资简介<i></i></li>
             <li>家长口碑<i></i></li>
         </ul>
     </div>
-    <div class="tab-content" id="tab-content">
+    <div class="tab-content" id="tab_wrap">
         <div>
-            <p class="am-padding" style="padding-bottom: 80px;">
+            <p class="am-padding-horizontal">
                 <img src="../../images/about_course.png" alt="" class="am-img-responsive">
                 <img src="../../images/about_course2.png" alt="" class="am-img-responsive">
                 <img src="../../images/about_course3.png" alt="" class="am-img-responsive">
             </p>
         </div>
-        <div class="am-hide" style="padding-bottom: 80px;">
+        <div class="am-hide">
             <article class="am-comment am-padding-horizontal-xs am-margin-bottom-xs">
                 <a href="#link-to-user-home">
                     <img src="../../images/teacher_intro.jpg" alt="" class="am-comment-avatar teacher_intro_img"/>
@@ -180,7 +180,7 @@
                 </div>
             </article>
         </div>
-        <div class="am-hide" style="padding-bottom: 80px;">
+        <div class="am-hide">
             <!-- 家长口碑 -->
             <div class="am-g mt10 am-padding-horizontal-sm">
                 <div class="am-u-sm-8 user">
@@ -225,13 +225,7 @@
         <button class="am-text-default collect-btn"><i class="star-icon"></i><br>收藏</button>
         <button class="launch-collage">发起拼团</button>
         <button class="launch-collage exchange-score-btn">兑换积分</button>
-        <button
-                type="button"
-                class="launch-collage appoint-listen-btn"
-                data-am-modal="{target: '#my-actions'}">
-            预约试听
-        </button>
-
+        <button type="button" class="launch-collage appoint-listen-btn" data-am-modal="{target: '#my-actions'}">预约试听</button>
         <div class="am-modal-actions" id="my-actions">
             <div class="am-modal-actions-group" style="position: relative;max-width: 640px;margin: 0 auto;">
                 <div class="am-list am-padding-sm" style="background-color: #fff;">
@@ -260,13 +254,6 @@
 <!-- 引入外部JS -->
 <script src="../../assets/js/amazeui.min.js"></script>
 <script src="../../js/course/tab.js"></script>
-<script>
-    $("#am_silder").flexslider({
-        directionNav: false,
-        pauseOnHover: true,
-        slideshowSpeed: 3000,           // Integer: ms 滚动间隔时间
-        playAfterPaused: 1000           // Integer: ms 用户停止操作多长时间以后重新开始自动播放
-    });
-</script>
+<script src="../../js/personal/slider.js"></script>
 </body>
 </html>

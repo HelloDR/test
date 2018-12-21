@@ -71,7 +71,7 @@
         }
     </style>
 </head>
-<body onload="loaded()">
+<body>
 <!-- S 导航栏 -->
 <div class="header">
     <div class="am-g center nav">
@@ -535,22 +535,18 @@
 <!-- S 底部导航 -->
 <div class="am-g foot-nav">
     <div class="am-u-sm-3 center">
-        <!--<p class="am-icon-home am-icon-lg ico"></p>-->
         <p><i class="common-icon"></i></p>
         <p><a href="../../index.html">选课</a></p>
     </div>
     <div class="am-u-sm-3 center">
-        <!--<p class="am-icon-commenting am-icon-lg ico"></p>-->
         <p><i class="common-icon foot-icon2"></i></p>
         <p><a href="../appraise/appraise.html">口碑</a></p>
     </div>
     <div class="am-u-sm-3 center">
-        <!--<p class="am-icon-shopping-cart am-icon-lg ico active"></p>-->
         <p><i class="common-icon foot-icon3 collage-icon"></i></p>
         <p><a href="collage.html" class="active">拼团</a></p>
     </div>
     <div class="am-u-sm-3 center">
-        <!--<p class="am-icon-user am-icon-lg ico"></p>-->
         <p><i class="common-icon foot-icon4"></i></p>
         <p><a href="../personal/person-center.html">我的</a></p>
     </div>
@@ -567,29 +563,8 @@
 
 <!-- 引入外部JS -->
 <script src="../../assets/js/amazeui.min.js"></script>
-<script src="../../js/appraise/appraise.js"></script>
 <script src="../../js/lib/iscroll.js"></script>
 <script src="../../js/lib/demoUtils.js"></script>
-<!-- 滑动区域JS -->
-<script type="text/javascript">
-    var myScroll_1,myScroll_2,myScroll_3,myScroll_4,myScroll_5;
-    function loaded () {
-        // 主页内容
-        myScroll_1 = new IScroll('.wrapper');
-    }
-    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
-        capture: false,
-        passive: false
-    } : false);
-</script>
-<script>
-    $(function() {
-        var id = '#my-offcanvas';
-        var $myOc = $(id);
-        $('.doc-oc-js').on('click', function() {
-            $myOc.offCanvas($(this).data('rel'));
-        });
-    });
-</script>
+<script src="../../js/appraise/appraise.js"></script>
 </body>
 </html>

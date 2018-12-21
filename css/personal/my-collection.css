@@ -10,6 +10,9 @@
 .icon2{
     background: url(../../images/sprite.png) -8px -585px no-repeat;
 }
+.collect{
+    cursor: pointer;
+}
 .collect1{
     width: 106px;
     padding: 0;
@@ -20,7 +23,7 @@
     padding: 0;
     margin-right: 45px;
 }
-.nav-active{
+.active{
     border-bottom: 1px solid #ff4141;
 }
 .course-collect-txt{

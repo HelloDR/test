@@ -89,6 +89,9 @@ img{
     border:1px solid #ff4141;
     margin:0 auto;
 }
+.tab-content{
+    padding-bottom: 80px;
+}
 
 /* 按钮区 */
 .btn-area{
