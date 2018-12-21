@@ -380,7 +380,7 @@ input[type="text"], textarea {
     font-size: 1.2rem;
 }
 .category-item .txt span{
-    margin:0 10px;
+    margin:0 5px;
 }
 
 /* 筛选 */

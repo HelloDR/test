@@ -114,5 +114,6 @@ $(function () {
     $('.doc-oc-js').on('click', function() {
         $myOc.offCanvas($(this).data('rel'));
     });
+    
 });
 
