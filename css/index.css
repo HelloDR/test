@@ -1,10 +1,5 @@
 @charset "UTF-8";
 /* 公共样式 */
-#app{
-    /*overflow-y: auto;*/
-    /*!*overflow-x: hidden;*!*/
-    /*height:567px;*/
-}
 body{
     font-family:PingFang,SourceHanSansN,"宋体";
 }
@@ -16,42 +11,39 @@ img {
 }
 
 /* 轮播图 */
-.banner {
-    /*height: 175px;*/
-    /*overflow: hidden*/
+.am-slider{
+    height: 260px;
 }
-
-/*导航栏*/
-.nav-txt{
-    font-family:PingFang;
+.am-slider  ul.am-slides  li{
+    height: 260px;
+}
+.am-slider  ul.am-slides  li img{
+    height: 100%;
 }
 .am-control-nav {
-    bottom: 10px !important;
+    bottom: 25px !important;
+    z-index: 9;
 }
-
-.am-direction-nav {
-    display: none;
-}
-
 .am-slider-default .am-control-nav li a {
     background-color: #fff;
     box-shadow: none;
 }
 
 .am-slider-default .am-control-nav li a:hover {
-    background-color: red;
+    background-color: #ff4141;
     cursor: default;
 }
 
 .am-slider-default .am-control-nav li a.am-active {
-    background-color: red;
+    background-color: #ff4141;
     cursor: default;
 }
 
-/*.ico > img{*/
-/*width:67px;*/
-/*height:67px;*/
-/*}*/
+/*导航栏*/
+.nav-txt{
+    font-family:PingFang;
+}
+
 .icon {
     width: 67px;
     height: 67px;
@@ -81,9 +73,6 @@ img {
 }
 
 /* 最新快报 */
-.last-new-division {
-    /*padding: 0 10px;*/
-}
 
 .last-new-division-item {
     height: 1px;
@@ -119,8 +108,6 @@ img {
 
 /* 课程 */
 .more {
-    /*display: block;*/
-    /*text-align: right;*/
     position: relative;
     top: -10px;
     font-size: 1.7rem;
@@ -130,7 +117,6 @@ img {
 
 .courses_name > a > img {
     margin: 10px 0;
-    /*width:161px;*/
     height: 100px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -221,7 +207,6 @@ img {
 }
 .join-btn{
     text-align: right;
-    /*margin:10px 0 0 0;*/
 }
 .join-btn button{
     display: inline-block;

@@ -9,13 +9,19 @@ img{
     overflow-y:scroll;
     height: 660px;
 }
-/* 头部轮播图片 */
 .top-banner{
+    height:260px;
     position: relative;
     border-bottom:5px solid #f0f1f5;
 }
-.top-banner ul li a img{
-    width:100%;
+.am-slider{
+    height:260px;
+}
+.am-slider ul.am-slides li{
+    height: 260px!important;
+}
+.am-slider ul.am-slides li img,.am-slider ul.am-slides li video{
+    height: 260px;
 }
 .count{
     width:75px;
