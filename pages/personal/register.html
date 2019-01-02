@@ -42,10 +42,10 @@
         <div class="login-way am-u-sm-12">
             <form action="" class="am-form login-wrap show" id="register_form">
                 <p style="position: relative;"><i class="icon"></i><input type="text" placeholder="请输入手机号码" class="am-margin-bottom-lg tel-number3"></p>
-                <p style="position: relative;z-index: 999;overflow: hidden;">
+                <div style="position: relative;z-index: 999;overflow: hidden;">
                     <i class="icon icon3"></i><input type="text" placeholder="请输入验证码" class="am-margin-bottom-lg am-fl" style="width: 55%;">
-                    <img src="../../images/erweima.png" alt="" class="am-fr erweima">
-                </p>
+                    <div id="mpanel1" ></div>
+                </div>
                 <p style="position: relative;"><i class="icon icon2"></i><input type="password" placeholder="请输入密码" class="am-margin-bottom-lg pwd2"></p>
                 <p style="position: relative;"><i class="icon icon2"></i><input type="password" placeholder="请再次输入密码" class="am-margin-bottom-lg confirm-pwd1"></p>
                 <button type="submit" class="am-btn am-btn-danger am-btn-block login-btn">立即注册</button>
@@ -66,6 +66,7 @@
 
 <!-- 引入外部JS -->
 <script src="../../assets/js/amazeui.min.js"></script>
+<script src="../../js/lib/verify.min.js"></script>
 <script src="../../js/personal/login.js"></script>
 </body>
 </html>

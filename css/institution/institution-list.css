@@ -98,12 +98,16 @@
 
 /* 预约礼 */
 .appointment-gift{
-    position: relative;
-    top:-7px;
-    border:1px solid #ea4331;
-    border-right: transparent;;
-    color: #ea4331;
-    padding:5px 5px;
+    /*position: relative;*/
+    /*top:-7px;*/
+    /*border:1px solid #ea4331;*/
+    /*border-right: transparent;;*/
+    /*color: #ea4331;*/
+    /*padding:5px 5px;*/
+    display: inline-block;
+    width:58px;
+    height:20px;
+    background: url("../../images/sprite.png") -168px -203px no-repeat;
 }
 .narrow{
     display: inline-block;

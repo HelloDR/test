@@ -55,9 +55,9 @@ $(function () {
         myScroll_5 = new IScroll('#area_right');
     }
     // 获取导航栏下的tab文字
-    var $p=$(".nav p");
-    // 获取所有的tab内容
-    var $down_list=$(".down-list");
+    var $p=$(".nav p"),
+        // 获取所有的tab内容
+        $down_list=$(".down-list");
     // 为nav上的每一元素注册点击事件
     $p.click(function () {
         // 先隐藏所有的下拉列表内容
@@ -82,11 +82,11 @@ $(function () {
     });
 
     // 类别tab内容切换
-    var category_left=$("#wrapper_ul").children("ul").children("li");
-    var category_box=$(".category-box");
+    var category_left=$("#wrapper_ul").children("ul").children("li"),
+    category_box=$(".category-box");
     // 区域tab内容切换
-    var area_category_left=$("#area_ul").children("ul").children("li");
-    var area_category_box=$(".area-category-box");
+    var area_category_left=$("#area_ul").children("ul").children("li"),
+        area_category_box=$(".area-category-box");
     // 类别列表内容点击事件
     category_left.click(function () {
         var index=$(this).index();
@@ -109,11 +109,10 @@ $(function () {
     });
     
     // 侧边栏点击确定按钮关闭事件
-    var id = '#my-offcanvas';
-    var $myOc = $(id);
+    var id = '#my-offcanvas',
+        $myOc = $(id);
     $('.doc-oc-js').on('click', function() {
         $myOc.offCanvas($(this).data('rel'));
     });
-    
 });
 
