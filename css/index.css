@@ -12,10 +12,10 @@ img {
 
 /* 轮播图 */
 .am-slider{
-    height: 260px;
+    height: 200px;
 }
 .am-slider  ul.am-slides  li{
-    height: 260px;
+    height: 200px;
 }
 .am-slider  ul.am-slides  li img{
     height: 100%;
@@ -45,25 +45,25 @@ img {
 }
 
 .icon {
-    width: 67px;
-    height: 67px;
+    width: 46px;
+    height: 45px;
     display: inline-block;
 }
 
 .icon1 {
-    background: url(../images/sprite.png) -58px -114px no-repeat;
+    background: url(../images/sprite.png) -70px -115px no-repeat;
 }
 
 .icon2 {
-    background: url(../images/sprite.png) -167px -114px no-repeat;
+    background: url(../images/sprite.png) -145px -115px no-repeat;
 }
 
 .icon3 {
-    background: url(../images/sprite.png) -273px -114px no-repeat;
+    background: url(../images/sprite.png) -219px -115px no-repeat;
 }
 
 .icon4 {
-    background: url(../images/sprite.png) -381px -114px no-repeat;
+    background: url(../images/sprite.png) -294px -115px no-repeat;
 }
 
 /* 分割线1 */
