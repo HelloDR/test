@@ -12,10 +12,10 @@ img {
 
 /* 轮播图 */
 .am-slider{
-    height: 200px;
+    /*height: 200px;*/
 }
 .am-slider  ul.am-slides  li{
-    height: 200px;
+    /*height: 200px;*/
 }
 .am-slider  ul.am-slides  li img{
     height: 100%;
