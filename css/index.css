@@ -93,9 +93,30 @@ img {
 .fast-news{
     font-family: PingFang;
     top:15px;
+    padding:0;
 }
 .platform{
     font-family: PingFang;
+}
+
+.scrollUl {
+    overflow:hidden;
+    position:relative;
+}
+#scrollUlTest1 {
+    height:20px;
+}
+.scrollUl ul, .scrollUl li {
+    width:100%;
+    margin:0;
+    padding:0;
+    list-style:none outside;
+}
+.scrollUl ul {
+    position:absolute;
+}
+.scrollUl li {
+    height:20px;
 }
 
 /* 分割线2 */
@@ -191,7 +212,7 @@ img {
     text-align: right;
 }
 .tip-txt span{
-    color: #ddd;
+    color: #ccc;
     font-weight:bold;
     margin-top:20px;
 }

@@ -69,7 +69,7 @@ input[type="text"], textarea {
 }
 
 .red {
-    color: #f00;
+    color: #ff4141;
 }
 
 .orange{
@@ -201,7 +201,7 @@ input[type="text"], textarea {
     width: 30px;
     height: 30px;
     right: 15px;
-    top: 10px;
+    top: 16px;
     z-index: 999;
 }
 .confirmation-true {
