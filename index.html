@@ -1,280 +1,265 @@
 <!doctype html>
-<html class="no-js">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <!-- 移动优先 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
-    <title>乐享好课</title>
-    <!-- 渲染引擎 -->
-    <meta name="renderer" content="webkit">
-    <!-- 防贴广告-->
-    <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <link rel="icon" type="image/png" href="assets/i/favicon.png">
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
-    <meta name="msapplication-TileColor" content="#0e90d2">
-    <link rel="stylesheet" href="assets/css/amazeui.min.css">
-    <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/index.css">
+  <meta charset="utf-8">
+  <meta http-equiv = "Cache-Control" content = "max-age=7200">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>乐享好课</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 <div id="app">
-    <!-- S 轮播图 -->
-    <div class="am-slider am-slider-default" id="banner" data-am-flexslider="{playAfterPaused: 1000}">
-        <ul class="am-slides">
-            <li><img src="images/insitution_tro.jpg"></li>
-            <li><img src="images/banner.png"></li>
-            <li><img src="images/banner4.png"></li>
+  <!-- S 轮播图 -->
+  <div class="am-slider am-slider-default" id="banner" data-am-flexslider="{playAfterPaused: 1000}">
+    <ul class="am-slides">
+      <li><img src="images/insitution_tro.jpg"></li>
+      <li><img src="images/banner.png"></li>
+      <li><img src="images/banner4.png"></li>
+    </ul>
+  </div>
+  <!-- E 轮播图 -->
+
+  <!-- S 导航栏 -->
+  <div class="am-g am-g-fixed am-margin-bottom-sm">
+    <div class="am-u-sm-3 am-text-center">
+      <div>
+        <p class="center icon icon1"></p>
+        <p class="center nav-txt"><a href="pages/course/course-list.html" class="am-text-lg">选课程</a></p>
+      </div>
+    </div>
+    <div class="am-u-sm-3 am-text-center">
+      <div>
+        <p class="center icon icon2"></p>
+        <p class="center nav-txt"><a href="pages/institution/instituton-list.html" class="am-text-lg">选机构</a></p>
+      </div>
+    </div>
+    <div class="am-u-sm-3 am-text-center">
+      <div>
+        <p class="center icon icon3"></p>
+        <p class="center nav-txt"><a href="pages/appraise/appraise.html" class="am-text-lg">口碑</a></p>
+      </div>
+    </div>
+    <div class="am-u-sm-3 am-text-center">
+      <div>
+        <p class="center icon icon4"></p>
+        <p class="center nav-txt"><a href="pages/collage/collage.html" class="am-text-lg">拼团</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- E 导航栏 -->
+
+  <!-- S 分割线 -->
+  <div class="am-g am-g-fixed last-new-division">
+    <div class="am-u-sm-12 last-new-division-item"></div>
+  </div>
+  <!-- E 分割线 -->
+
+  <!-- S 平台公告 -->
+  <div class="am-g last-new">
+    <div class="am-u-sm-12 center am-vertical-align-middle">
+      <div class="am-u-sm-2 am-padding-0">
+        <span class="am-text-lg platform">平台</span><br>
+        <i class="platform-icon"></i>
+      </div>
+      <div class="am-u-sm-10 fast-news scrollUl" id="scrollUlTest1">
+        <!--<span class="am-text-sm">祝贺**同学报名了舞蹈学校舞蹈学习班</span>-->
+        <ul>
+          <li class="am-text-sm">祝贺张同学报名了舞蹈学校舞蹈学习班</li>
+          <li class="am-text-sm">祝贺李同学报名了舞蹈学校舞蹈学习班</li>
+          <li class="am-text-sm">祝贺陈同学报名了舞蹈学校舞蹈学习班</li>
+          <li class="am-text-sm">祝贺王同学报名了舞蹈学校舞蹈学习班</li>
+          <li class="am-text-sm">祝贺赵同学报名了舞蹈学校舞蹈学习班</li>
         </ul>
+      </div>
     </div>
-    <!-- E 轮播图 -->
+  </div>
+  <!-- E 平台公告 -->
 
-    <!-- S 导航栏 -->
-    <div class="am-g am-g-fixed am-margin-bottom-sm">
-        <div class="am-u-sm-3 am-text-center">
-            <div>
-                <p class="center icon icon1"></p>
-                <p class="center nav-txt"><a href="pages/course/course-list.html" class="am-text-lg">选课程</a></p>
-            </div>
-        </div>
-        <div class="am-u-sm-3 am-text-center">
-            <div>
-                <p class="center icon icon2"></p>
-                <p class="center nav-txt"><a href="pages/institution/instituton-list.html" class="am-text-lg">选机构</a></p>
-            </div>
-        </div>
-        <div class="am-u-sm-3 am-text-center">
-            <div>
-                <p class="center icon icon3"></p>
-                <p class="center nav-txt"><a href="pages/appraise/appraise.html" class="am-text-lg">口碑</a></p>
-            </div>
-        </div>
-        <div class="am-u-sm-3 am-text-center">
-            <div>
-                <p class="center icon icon4"></p>
-                <p class="center nav-txt"><a href="pages/collage/collage.html" class="am-text-lg">拼团</a></p>
-            </div>
-        </div>
-    </div>
-    <!-- E 导航栏 -->
+  <!-- S 分割线 -->
+  <div class="am-g am-g-fixed line"></div>
+  <!-- E 分割线 -->
 
-    <!-- S 分割线 -->
-    <div class="am-g am-g-fixed last-new-division">
-        <div class="am-u-sm-12 last-new-division-item"></div>
+  <!-- S 商圈拼团-->
+  <div class="am-g">
+    <div class="am-u-sm-6"><p class="am-text-default borderLeft">商圈拼团</p></div>
+    <div class="am-u-sm-6 am-text-right"><a href="pages/collage/collage.html" class="more">查看更多</a><i
+      class="left-arrow"></i></div>
+  </div>
+  <div class="am-g">
+    <div class="am-u-sm-6 user">
+      <img src="images/user1.jpg" alt="">
+      <span>Henry</span>
     </div>
-    <!-- E 分割线 -->
+    <div class="am-u-sm-6 tip-txt">
+      <span class="am-text-sm">已有3人成团，还缺2人</span>
+    </div>
+    <div class="am-u-sm-12 am-margin-vertical-sm">
+      <p class="am-text-default">美术课堂还和自然科学工程相结合，孩子很喜欢番茄苗的各种主题，
+        老师也很可爱，找两位家长团课。</p>
+    </div>
+    <div class="am-u-sm-12">
+      <img src="images/fanqiemiao.jpg" alt="" class="main-img am-img-responsive am-padding-vertical-xs">
+    </div>
+    <div class="am-u-sm-12">
+      <div class="am-u-sm-6 collage-icon">
+        <i class="am-icon-heart am-icon-sm"></i>
+        <span>888</span>
+        <i class="am-icon-comment am-icon-sm"></i>
+        <span>666</span>
+      </div>
+      <div class="am-u-sm-6 join-btn">
+        <a href="pages/collage/launch-collage.html">
+          <button>我要参团</button>
+        </a>
+      </div>
+    </div>
+    <div class="am-u-sm-12 divide"></div>
+  </div>
+  <!-- E 商圈拼团-->
 
-    <!-- S 平台公告 -->
-    <div class="am-g last-new">
-        <div class="am-u-sm-12 center am-vertical-align-middle">
-            <div class="am-u-sm-2 am-padding-0">
-                <span class="am-text-lg platform">平台</span><br>
-                <i class="platform-icon"></i>
-            </div>
-            <div class="am-u-sm-10 fast-news scrollUl" id="scrollUlTest1">
-                <!--<span class="am-text-sm">祝贺**同学报名了舞蹈学校舞蹈学习班</span>-->
-                <ul>
-                    <li class="am-text-sm">祝贺张同学报名了舞蹈学校舞蹈学习班</li>
-                    <li class="am-text-sm">祝贺李同学报名了舞蹈学校舞蹈学习班</li>
-                    <li class="am-text-sm">祝贺陈同学报名了舞蹈学校舞蹈学习班</li>
-                    <li class="am-text-sm">祝贺王同学报名了舞蹈学校舞蹈学习班</li>
-                    <li class="am-text-sm">祝贺赵同学报名了舞蹈学校舞蹈学习班</li>
-                </ul>
-            </div>
-        </div>
+  <!-- S 优选课程 -->
+  <div class="am-g">
+    <div class="am-u-sm-6"><p class="am-text-default borderLeft">优选课程</p></div>
+    <div class="am-u-sm-6 am-text-right"><a href="pages/course/course-list.html" class="more">查看更多</a><i
+      class="left-arrow"></i></div>
+  </div>
+  <div class="am-g">
+    <div class="am-u-sm-6">
+      <p class="courses_name"><a href="pages/course/course-detail.html"><img class="am-img-responsive"
+                                                                             src="images/insitution_tro.jpg"
+                                                                             alt="课程"></a>
+      </p>
+      <p class="am-text-default course-name">真朴围棋</p>
+      <p class="am-text-sm institution-name">真朴围棋</p>
     </div>
-    <!-- E 平台公告 -->
+    <div class="am-u-sm-6">
+      <p class="courses_name right"><a href="pages/course/course-detail.html"><img class="am-img-responsive"
+                                                                                   src="images/course1.jpg"
+                                                                                   alt="课程"></a>
+      </p>
+      <p class="am-text-left am-text-default course-name">吉他/架子鼓/古筝</p>
+      <p class="am-text-sm institution-name">星驰琴行</p>
+    </div>
+  </div>
+  <div class="am-g">
+    <div class="am-u-sm-6">
+      <p class="courses_name"><a href="pages/course/course-detail.html"><img class="am-img-responsive"
+                                                                             src="images/course2.png" alt="课程"></a>
+      </p>
+      <p class="am-text-default course-name">疯狂涂鸦</p>
+      <p class="am-text-sm institution-name">大卫艺术</p>
+    </div>
+    <div class="am-u-sm-6">
+      <p class="courses_name right"><a href="#"><img class="am-img-responsive" src="images/course3.jpg" alt="课程"></a>
+      </p>
+      <p class="am-text-left am-text-default course-name">中国舞</p>
+      <p class="am-text-sm institution-name">天赐舞蹈</p>
+    </div>
+  </div>
+  <!-- E 优选课程 -->
 
-    <!-- S 分割线 -->
-    <div class="am-g am-g-fixed line"></div>
-    <!-- E 分割线 -->
+  <!-- S 分割线 -->
+  <div class="am-g am-g-fixed line"></div>
+  <!-- E 分割线 -->
 
-    <!-- S 商圈拼团-->
-    <div class="am-g">
-        <div class="am-u-sm-6"><p class="am-text-default borderLeft">商圈拼团</p></div>
-        <div class="am-u-sm-6 am-text-right"><a href="pages/collage/collage.html" class="more">查看更多</a><i
-                class="left-arrow"></i></div>
+  <!-- S 精选机构 -->
+  <div class="am-g">
+    <div class="am-u-sm-6"><p class="am-text-default borderLeft">精选机构</p></div>
+    <div class="am-u-sm-6 am-text-right"><a href="pages/institution/instituton-list.html" class="more">查看更多</a><i
+      class="left-arrow"></i></div>
+  </div>
+  <div class="am-g">
+    <div class="am-u-sm-6">
+      <p class="courses_name"><a href="pages/institution/institution-detail.html"><img class="am-img-responsive"
+                                                                                       src="images/good_institution1.jpg"
+                                                                                       alt="课程"></a></p>
+      <p class="am-text-default color333 good-institution-name">伟达英语</p>
     </div>
-    <div class="am-g">
-        <div class="am-u-sm-6 user">
-            <img src="images/user1.jpg" alt="">
-            <span>Henry</span>
-        </div>
-        <div class="am-u-sm-6 tip-txt">
-            <span class="am-text-sm">已有3人成团，还缺2人</span>
-        </div>
-        <div class="am-u-sm-12 am-margin-vertical-sm">
-            <p class="am-text-default">美术课堂还和自然科学工程相结合，孩子很喜欢番茄苗的各种主题，
-            老师也很可爱，找两位家长团课。</p>
-        </div>
-        <div class="am-u-sm-12">
-            <img src="images/fanqiemiao.jpg" alt="" class="main-img am-img-responsive am-padding-vertical-xs">
-        </div>
-        <div class="am-u-sm-12">
-            <div class="am-u-sm-6 collage-icon">
-                <i class="am-icon-heart am-icon-sm"></i>
-                <span>888</span>
-                <i class="am-icon-comment am-icon-sm"></i>
-                <span>666</span>
-            </div>
-            <div class="am-u-sm-6 join-btn">
-                <a href="pages/collage/launch-collage.html"><button>我要参团</button></a>
-            </div>
-        </div>
-        <div class="am-u-sm-12 divide"></div>
+    <div class="am-u-sm-6">
+      <p class="courses_name right"><a href="pages/institution/institution-detail.html"><img class="am-img-responsive"
+                                                                                             src="images/insitution_tro.jpg"
+                                                                                             alt="课程"></a>
+      </p>
+      <p class="am-text-left am-text-default color333 good-institution-name">真朴围棋</p>
     </div>
-    <!-- E 商圈拼团-->
+  </div>
+  <div class="am-g">
+    <div class="am-u-sm-6">
+      <p class="courses_name"><a href="pages/institution/institution-detail.html"><img class="am-img-responsive"
+                                                                                       src="images/good_institution2.jpg"
+                                                                                       alt="课程"></a>
+      </p>
+      <p class="am-text-default color333 good-institution-name">鹏达外语</p>
+    </div>
+    <div class="am-u-sm-6">
+      <p class="courses_name right"><a href="pages/institution/institution-detail.html"><img class="am-img-responsive"
+                                                                                             src="images/fanqiemiao1.jpg"
+                                                                                             alt="课程"></a>
+      </p>
+      <p class="am-text-left am-text-default color333 good-institution-name">番茄苗</p>
+    </div>
+  </div>
+  <!-- E 精选机构 -->
 
-    <!-- S 优选课程 -->
-    <div class="am-g">
-        <div class="am-u-sm-6"><p class="am-text-default borderLeft">优选课程</p></div>
-        <div class="am-u-sm-6 am-text-right"><a href="pages/course/course-list.html" class="more">查看更多</a><i
-                class="left-arrow"></i></div>
-    </div>
-    <div class="am-g">
-        <div class="am-u-sm-6">
-            <p class="courses_name"><a href="pages/course/course-detail.html"><img class="am-img-responsive" src="images/insitution_tro.jpg" alt="课程"></a>
-            </p>
-            <p class="am-text-default course-name">真朴围棋</p>
-            <p class="am-text-sm institution-name">真朴围棋</p>
-        </div>
-        <div class="am-u-sm-6">
-            <p class="courses_name right"><a href="pages/course/course-detail.html"><img class="am-img-responsive" src="images/course1.jpg" alt="课程"></a>
-            </p>
-            <p class="am-text-left am-text-default course-name">吉他/架子鼓/古筝</p>
-            <p class="am-text-sm institution-name">星驰琴行</p>
-        </div>
-    </div>
-    <div class="am-g">
-        <div class="am-u-sm-6">
-            <p class="courses_name"><a href="pages/course/course-detail.html"><img class="am-img-responsive" src="images/course2.png" alt="课程"></a>
-            </p>
-            <p class="am-text-default course-name">疯狂涂鸦</p>
-            <p class="am-text-sm institution-name">大卫艺术</p>
-        </div>
-        <div class="am-u-sm-6">
-            <p class="courses_name right"><a href="#"><img class="am-img-responsive" src="images/course3.jpg" alt="课程"></a>
-            </p>
-            <p class="am-text-left am-text-default course-name">中国舞</p>
-            <p class="am-text-sm institution-name">天赐舞蹈</p>
-        </div>
-    </div>
-    <!-- E 优选课程 -->
+  <!-- S 分割线 -->
+  <div class="am-g am-g-fixed line"></div>
+  <!-- E 分割线 -->
 
-    <!-- S 分割线 -->
-    <div class="am-g am-g-fixed line"></div>
-    <!-- E 分割线 -->
-
-    <!-- S 精选机构 -->
-    <div class="am-g">
-        <div class="am-u-sm-6"><p class="am-text-default borderLeft">精选机构</p></div>
-        <div class="am-u-sm-6 am-text-right"><a href="pages/institution/instituton-list.html" class="more">查看更多</a><i
-                class="left-arrow"></i></div>
+  <!-- S 新闻咨讯 -->
+  <div class="am-g">
+    <div class="am-u-sm-6"><p class="am-text-default borderLeft">新闻资讯</p></div>
+    <div class="am-u-sm-6 am-text-right"><a href="pages/news/news.html" class="more">查看更多</a><i class="left-arrow"></i>
     </div>
-    <div class="am-g">
-        <div class="am-u-sm-6">
-            <p class="courses_name"><a href="pages/institution/institution-detail.html"><img class="am-img-responsive"
-                                                                                             src="images/good_institution1.jpg" alt="课程"></a></p>
-            <p class="am-text-default color333 good-institution-name">伟达英语</p>
-        </div>
-        <div class="am-u-sm-6">
-            <p class="courses_name right"><a href="pages/institution/institution-detail.html"><img class="am-img-responsive"
-                                                                                                   src="images/insitution_tro.jpg" alt="课程"></a>
-            </p>
-            <p class="am-text-left am-text-default color333 good-institution-name">真朴围棋</p>
-        </div>
+  </div>
+  <div class="am-g mb60">
+    <div class="am-u-sm-5">
+      <p class="courses_name">
+        <a href="pages/news/news-detail.html">
+          <img class="am-img-responsive" src="images/index_placeholder.jpg" alt="课程">
+        </a>
+      </p>
     </div>
-    <div class="am-g">
-        <div class="am-u-sm-6">
-            <p class="courses_name"><a href="pages/institution/institution-detail.html"><img class="am-img-responsive" src="images/good_institution2.jpg" alt="课程"></a>
-            </p>
-            <p class="am-text-default color333 good-institution-name">鹏达外语</p>
-        </div>
-        <div class="am-u-sm-6">
-            <p class="courses_name right"><a href="pages/institution/institution-detail.html"><img class="am-img-responsive" src="images/fanqiemiao1.jpg" alt="课程"></a>
-            </p>
-            <p class="am-text-left am-text-default color333 good-institution-name">番茄苗</p>
-        </div>
+    <div class="am-u-sm-7">
+      <div class="am-g am-margin-horizontal-0">
+        <p class="new_txt am-text-default color333"><a href="pages/news/news-detail.html">新闻咨询新闻咨询新闻咨询新闻资讯新闻资讯新闻资讯新闻咨询新闻咨询新闻咨询新闻咨询新闻咨询<i
+          class="ellipsis"></i></a></p>
+      </div>
+      <div class="am-g am-padding-right-xs am-margin-horizontal-0">
+        <p class="am-fl am-text-default">乐享好课</p>
+        <p class="am-fr am-text-default">2018-10-31</p>
+      </div>
     </div>
-    <!-- E 精选机构 -->
-
-    <!-- S 分割线 -->
-    <div class="am-g am-g-fixed line"></div>
-    <!-- E 分割线 -->
-
-    <!-- S 新闻咨讯 -->
-    <div class="am-g">
-        <div class="am-u-sm-6"><p class="am-text-default borderLeft">新闻资讯</p></div>
-        <div class="am-u-sm-6 am-text-right"><a href="pages/news/news.html" class="more">查看更多</a><i class="left-arrow"></i>
-        </div>
-    </div>
-    <div class="am-g mb60">
-        <div class="am-u-sm-5">
-            <p class="courses_name">
-                <a href="pages/news/news-detail.html">
-                    <img class="am-img-responsive" src="images/index_placeholder.jpg" alt="课程">
-                </a>
-            </p>
-        </div>
-        <div class="am-u-sm-7">
-            <div class="am-g am-margin-horizontal-0">
-                <p class="new_txt am-text-default color333"><a href="pages/news/news-detail.html">新闻咨询新闻咨询新闻咨询新闻资讯新闻资讯新闻资讯新闻咨询新闻咨询新闻咨询新闻咨询新闻咨询<i
-                        class="ellipsis"></i></a></p>
-            </div>
-            <div class="am-g am-padding-right-xs am-margin-horizontal-0">
-                <p class="am-fl am-text-default">乐享好课</p>
-                <p class="am-fr am-text-default">2018-10-31</p>
-            </div>
-        </div>
-    </div>
-    <!-- E 新闻咨询 -->
+  </div>
+  <!-- E 新闻咨询 -->
 </div>
 <!-- S 底部导航-->
 <div class="am-g foot-nav">
-    <div class="am-u-sm-3 active center">
-        <p><i class="common-icon index-icon"></i></p>
-        <p><a href="index.html" class="active">选课</a></p>
-    </div>
-    <div class="am-u-sm-3 center">
-        <p><i class="common-icon foot-icon2"></i></p>
-        <p><a href="pages/appraise/appraise.html">口碑</a></p>
-    </div>
-    <div class="am-u-sm-3 center">
-        <p><i class="common-icon foot-icon3"></i></p>
-        <p><a href="pages/collage/collage.html">拼团</a></p>
-    </div>
-    <div class="am-u-sm-3 center">
-        <p><i class="common-icon foot-icon4"></i></p>
-        <p><a href="pages/personal/person-center.html">我的</a></p>
-    </div>
+  <div class="am-u-sm-3 active center">
+    <p><i class="common-icon index-icon"></i></p>
+    <p><a href="index.html" class="active">选课</a></p>
+  </div>
+  <div class="am-u-sm-3 center">
+    <p><i class="common-icon foot-icon2"></i></p>
+    <p><a href="pages/appraise/appraise.html">口碑</a></p>
+  </div>
+  <div class="am-u-sm-3 center">
+    <p><i class="common-icon foot-icon3"></i></p>
+    <p><a href="pages/collage/collage.html">拼团</a></p>
+  </div>
+  <div class="am-u-sm-3 center">
+    <p><i class="common-icon foot-icon4"></i></p>
+    <p><a href="pages/personal/person-center.html">我的</a></p>
+  </div>
 </div>
 <!-- E 底部导航 -->
-
-<!--[if (gte IE 9)|!(IE)]><!-->
-    <script src="js/lib/jquery-1.12.1.min.js"></script>
-<!--<![endif]-->
-<!--[if lte IE 8 ]>
-    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-    <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
-<![endif]-->
 <!-- S 外部JS引入 -->
-    <script src="assets/js/amazeui.min.js"></script>
-    <script src="js/personal/slider.js"></script>
-    <script src="js/index.js"></script>
+<script src="js/lib/jquery-1.12.1.min.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<script src="js/personal/slider.js"></script>
+<script src="js/index.js"></script>
 <!-- E 外部JS引入 -->
 </body>
 </html>
