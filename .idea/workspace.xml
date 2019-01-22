@@ -1,95 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="dd69ff38-0833-4b6c-968c-90d5065e982e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/appraise/appraise-detail-parent.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/appraise/appraise-detail.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/appraise/appraise.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/collage/collage-info.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/collage/collage.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/collage/launch-collage.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/course/course-detail.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/course/course-list.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/course/discount-score.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/course/teacher-detail.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/institution/institution-detail.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/institution/institution-list.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/other/feature.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/other/free-listen.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/other/verify.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/personal/discount-package.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/personal/institution-enter.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/personal/login.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/personal/my-appointment.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/personal/my-collection.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/personal/my-course.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/personal/my-integral.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/personal/partner.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/personal/person-center.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/personal/register.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/personal/suggestion.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/appraise/appraise.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/appraise/chart.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/appraise/publish-appraise.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/collage/countdown.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/course/institution-fixed.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/course/tab.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/index.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/institution/institution-detail.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/iscroll.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/personal/code.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/personal/code.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/personal/discount-package.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/personal/login.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/personal/my-collection.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/personal/my-course.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/personal/my_appointment.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/personal/personal_tab.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/personal/suggestion.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/banner2.png" afterPath="$PROJECT_DIR$/images/banner2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/course1.jpg" afterPath="$PROJECT_DIR$/images/course1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fanqiemiao.jpg" afterPath="$PROJECT_DIR$/images/fanqiemiao.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fanqiemiao1.jpg" afterPath="$PROJECT_DIR$/images/fanqiemiao1.jpg" />
+    <list default="true" id="dd69ff38-0833-4b6c-968c-90d5065e982e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/appraise/appraise.css" afterPath="$PROJECT_DIR$/css/appraise/appraise.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lib/demoUtils.js" afterPath="$PROJECT_DIR$/js/lib/demoUtils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/personal/login.js" afterPath="$PROJECT_DIR$/js/personal/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/personal/slider.js" afterPath="$PROJECT_DIR$/js/personal/slider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/activity/activity.html" afterPath="$PROJECT_DIR$/pages/activity/activity.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/appraise/appraise-detail-parent.html" afterPath="$PROJECT_DIR$/pages/appraise/appraise-detail-parent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/appraise/appraise-detail.html" afterPath="$PROJECT_DIR$/pages/appraise/appraise-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/appraise/appraise.html" afterPath="$PROJECT_DIR$/pages/appraise/appraise.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/appraise/publish-appraise.html" afterPath="$PROJECT_DIR$/pages/appraise/publish-appraise.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/collage/collage.html" afterPath="$PROJECT_DIR$/pages/collage/collage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/collage/college-info.html" afterPath="$PROJECT_DIR$/pages/collage/college-info.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/collage/launch-collage.html" afterPath="$PROJECT_DIR$/pages/collage/launch-collage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/course/course-detail.html" afterPath="$PROJECT_DIR$/pages/course/course-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/course/course-list.html" afterPath="$PROJECT_DIR$/pages/course/course-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/course/discount-score.html" afterPath="$PROJECT_DIR$/pages/course/discount-score.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/course/teacher-detail.html" afterPath="$PROJECT_DIR$/pages/course/teacher-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/institution/institution-detail.html" afterPath="$PROJECT_DIR$/pages/institution/institution-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/institution/instituton-list.html" afterPath="$PROJECT_DIR$/pages/institution/instituton-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/map/map.html" afterPath="$PROJECT_DIR$/pages/map/map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/news/news-detail.html" afterPath="$PROJECT_DIR$/pages/news/news-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/news/news.html" afterPath="$PROJECT_DIR$/pages/news/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/other/feature.html" afterPath="$PROJECT_DIR$/pages/other/feature.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/other/free-listen.html" afterPath="$PROJECT_DIR$/pages/other/free-listen.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/personal/concat-us.html" afterPath="$PROJECT_DIR$/pages/personal/concat-us.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/personal/discount-package.html" afterPath="$PROJECT_DIR$/pages/personal/discount-package.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/personal/forget-password.html" afterPath="$PROJECT_DIR$/pages/personal/forget-password.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/personal/institution-enter.html" afterPath="$PROJECT_DIR$/pages/personal/institution-enter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/personal/login.html" afterPath="$PROJECT_DIR$/pages/personal/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/personal/my-activity.html" afterPath="$PROJECT_DIR$/pages/personal/my-activity.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/personal/my-collection.html" afterPath="$PROJECT_DIR$/pages/personal/my-collection.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/personal/my-course.html" afterPath="$PROJECT_DIR$/pages/personal/my-course.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/personal/my_appointment.html" afterPath="$PROJECT_DIR$/pages/personal/my_appointment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/personal/my_integral.html" afterPath="$PROJECT_DIR$/pages/personal/my_integral.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/personal/partner.html" afterPath="$PROJECT_DIR$/pages/personal/partner.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/personal/person-center.html" afterPath="$PROJECT_DIR$/pages/personal/person-center.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/personal/platform_brief.html" afterPath="$PROJECT_DIR$/pages/personal/platform_brief.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/personal/register.html" afterPath="$PROJECT_DIR$/pages/personal/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/personal/suggesttion.html" afterPath="$PROJECT_DIR$/pages/personal/suggesttion.html" />
     </list>
     <ignored path="选课.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,8 +26,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            <state relative-caret-position="135">
+              <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -228,6 +141,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -326,7 +240,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -502,7 +415,8 @@
       <workItem from="1547602886253" duration="629000" />
       <workItem from="1548032964341" duration="2033000" />
       <workItem from="1548051605307" duration="10804000" />
-      <workItem from="1548119560745" duration="4276000" />
+      <workItem from="1548119560745" duration="4964000" />
+      <workItem from="1548125388487" duration="17000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1547457713043</created>
@@ -525,11 +439,18 @@
       <option name="project" value="LOCAL" />
       <updated>1548058360246</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2019/1/21 first commit">
+      <created>1548124368758</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1548124368758</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="666381000" />
+    <option name="totallyTimeSpent" value="667086000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -684,7 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -860,7 +780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -868,7 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
           <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,7 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -884,7 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,7 +808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,7 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -908,7 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -916,7 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1444" selection-start-line="0" selection-start-column="1444" selection-end-line="0" selection-end-column="1445" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,7 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -932,7 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="3351" selection-start-line="0" selection-start-column="3351" selection-end-line="0" selection-end-column="3351" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -940,7 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="431" selection-start-line="0" selection-start-column="431" selection-end-line="0" selection-end-column="431" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,7 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -956,7 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,7 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="161" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -972,16 +878,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="81" selection-end-column="9" />
-          <folding>
-            <element signature="n#form#1;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="135">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding />
         </state>
       </provider>
