@@ -2,19 +2,6 @@
  * Created by 15345 on 2018/11/19.
  */
 $(function () {
-    /*
-     * 验证码
-     */
-    $('#mpanel1').codeVerify({
-        //常规验证码type=1， 运算验证码type=2
-        type : 1,
-        //验证码宽度
-        width : '130px',
-        //验证码高度
-        height : '50px',
-        codeLength:4
-    });
-
     // 登录方式tab选项卡
     var login_tab = $(".login-tab");
     var login_wrap = $(".login-wrap");

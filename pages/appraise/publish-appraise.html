@@ -1,143 +1,116 @@
 <!doctype html>
-<html class="no-js">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>发布口碑</title>
-    <!-- Set render engine for 360 browser -->
-    <meta name="renderer" content="webkit">
-    <!-- No Baidu Siteapp-->
-    <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <link rel="icon" type="image/png" href="../../assets/i/favicon.png">
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="../../assets/i/app-icon72x72@2x.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
-    <link rel="apple-touch-icon-precomposed" href="../../assets/i/app-icon72x72@2x.png">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
-    <meta name="msapplication-TileColor" content="#0e90d2">
-
-    <!-- 外部CSS引入 -->
-    <link rel="stylesheet" href="../../assets/css/amazeui.min.css">
-    <link rel="stylesheet" href="../../assets/css/app.css">
-    <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/appraise/appraise.css">
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>发布口碑</title>
+  <!-- 外部CSS引入 -->
+  <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/appraise/appraise.min.css">
 </head>
 <body>
 <!-- S 课程评分 -->
 <div class="am-g">
-    <h1 class="am-u-sm-12 header-title">课程评价</h1>
+  <h1 class="am-u-sm-12 header-title">课程评价</h1>
 </div>
 <!-- E 课程评分 -->
 
 <!-- S 课程评分主体 -->
 <form action="">
-    <div class="am-g rating-wrap">
-        <div class="am-u-sm-5 rating-tit"><span>课程特色</span></div>
-        <div class="am-u-sm-7 rating">
-            <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
-            <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
-            <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
-            <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
-            <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
-        </div>
+  <div class="am-g rating-wrap">
+    <div class="am-u-sm-5 rating-tit"><span>课程特色</span></div>
+    <div class="am-u-sm-7 rating">
+      <input type="radio" id="star5" name="rating" value="5"/><label for="star5"></label>
+      <input type="radio" id="star4" name="rating" value="4"/><label for="star4"></label>
+      <input type="radio" id="star3" name="rating" value="3"/><label for="star3"></label>
+      <input type="radio" id="star2" name="rating" value="2"/><label for="star2"></label>
+      <input type="radio" id="star1" name="rating" value="1"/><label for="star1"></label>
     </div>
-    <div class="am-g rating-wrap">
-        <div class="am-u-sm-5 rating-tit"><span>课堂教学效果</span></div>
-        <div class="am-u-sm-7 rating">
-            <input type="radio" id="star5_1" name="rating1" value="5" /><label for="star5_1"></label>
-            <input type="radio" id="star4_1" name="rating1" value="4" /><label for="star4_1"></label>
-            <input type="radio" id="star3_1" name="rating1" value="3" /><label for="star3_1"></label>
-            <input type="radio" id="star2_1" name="rating1" value="2" /><label for="star2_1"></label>
-            <input type="radio" id="star1_1" name="rating1" value="1" /><label for="star1_1"></label>
-        </div>
+  </div>
+  <div class="am-g rating-wrap">
+    <div class="am-u-sm-5 rating-tit"><span>课堂教学效果</span></div>
+    <div class="am-u-sm-7 rating">
+      <input type="radio" id="star5_1" name="rating1" value="5"/><label for="star5_1"></label>
+      <input type="radio" id="star4_1" name="rating1" value="4"/><label for="star4_1"></label>
+      <input type="radio" id="star3_1" name="rating1" value="3"/><label for="star3_1"></label>
+      <input type="radio" id="star2_1" name="rating1" value="2"/><label for="star2_1"></label>
+      <input type="radio" id="star1_1" name="rating1" value="1"/><label for="star1_1"></label>
     </div>
-    <div class="am-g rating-wrap">
-        <div class="am-u-sm-5 rating-tit"><span>课后学习管理</span></div>
-        <div class="am-u-sm-7 rating">
-            <input type="radio" id="star5_2" name="rating2" value="5" /><label for="star5_2"></label>
-            <input type="radio" id="star4_2" name="rating2" value="4" /><label for="star4_2"></label>
-            <input type="radio" id="star3_2" name="rating2" value="3" /><label for="star3_2"></label>
-            <input type="radio" id="star2_2" name="rating2" value="2" /><label for="star2_2"></label>
-            <input type="radio" id="star1_2" name="rating2" value="1" /><label for="star1_2"></label>
-        </div>
+  </div>
+  <div class="am-g rating-wrap">
+    <div class="am-u-sm-5 rating-tit"><span>课后学习管理</span></div>
+    <div class="am-u-sm-7 rating">
+      <input type="radio" id="star5_2" name="rating2" value="5"/><label for="star5_2"></label>
+      <input type="radio" id="star4_2" name="rating2" value="4"/><label for="star4_2"></label>
+      <input type="radio" id="star3_2" name="rating2" value="3"/><label for="star3_2"></label>
+      <input type="radio" id="star2_2" name="rating2" value="2"/><label for="star2_2"></label>
+      <input type="radio" id="star1_2" name="rating2" value="1"/><label for="star1_2"></label>
+    </div>
 
+  </div>
+  <div class="am-g rating-wrap">
+    <div class="am-u-sm-5 rating-tit"><span>家校沟通</span></div>
+    <div class="am-u-sm-7 rating">
+      <input type="radio" id="star5_3" name="rating3" value="5"/><label for="star5_3"></label>
+      <input type="radio" id="star4_3" name="rating3" value="4"/><label for="star4_3"></label>
+      <input type="radio" id="star3_3" name="rating3" value="3"/><label for="star3_3"></label>
+      <input type="radio" id="star2_3" name="rating3" value="2"/><label for="star2_3"></label>
+      <input type="radio" id="star1_3" name="rating3" value="1"/><label for="star1_3"></label>
     </div>
-    <div class="am-g rating-wrap">
-        <div class="am-u-sm-5 rating-tit"><span>家校沟通</span></div>
-        <div class="am-u-sm-7 rating">
-            <input type="radio" id="star5_3" name="rating3" value="5" /><label for="star5_3"></label>
-            <input type="radio" id="star4_3" name="rating3" value="4" /><label for="star4_3"></label>
-            <input type="radio" id="star3_3" name="rating3" value="3" /><label for="star3_3"></label>
-            <input type="radio" id="star2_3" name="rating3" value="2" /><label for="star2_3"></label>
-            <input type="radio" id="star1_3" name="rating3" value="1" /><label for="star1_3"></label>
-        </div>
+  </div>
+  <div class="am-g last-rating-wrap ">
+    <div class="am-u-sm-5 rating-tit"><span>校区综合管理</span></div>
+    <div class="am-u-sm-7 rating">
+      <input type="radio" id="star5_4" name="rating4" value="5"/><label for="star5_4"></label>
+      <input type="radio" id="star4_4" name="rating4" value="4"/><label for="star4_4"></label>
+      <input type="radio" id="star3_4" name="rating4" value="3"/><label for="star3_4"></label>
+      <input type="radio" id="star2_4" name="rating4" value="2"/><label for="star2_4"></label>
+      <input type="radio" id="star1_4" name="rating4" value="1"/><label for="star1_4"></label>
     </div>
-    <div class="am-g last-rating-wrap ">
-        <div class="am-u-sm-5 rating-tit"><span>校区综合管理</span></div>
-        <div class="am-u-sm-7 rating">
-            <input type="radio" id="star5_4" name="rating4" value="5" /><label for="star5_4"></label>
-            <input type="radio" id="star4_4" name="rating4" value="4" /><label for="star4_4"></label>
-            <input type="radio" id="star3_4" name="rating4" value="3" /><label for="star3_4"></label>
-            <input type="radio" id="star2_4" name="rating4" value="2" /><label for="star2_4"></label>
-            <input type="radio" id="star1_4" name="rating4" value="1" /><label for="star1_4"></label>
-        </div>
+  </div>
+  <!-- 图片上传 -->
+  <div class="am-g upload-wrap">
+    <div class="am-form-group am-form-file upload">
+      <!--<div class="am-u-sm-4 upload-btn">-->
+      <!--<img src="../../images/upload.png" alt="">-->
+      <!--</div>-->
+      <div class="am-u-sm-5 gallery" id="gallery">
+        <img src="../../images/upload.png" alt="" class="upload-img">
+      </div>
+      <div class="am-u-sm-7 upload-txt">
+        <span id="upload" class="am-btn am-btn-primary">上传图片</span>
+        <!--<div id="file-list" class="file-list">照片大小尺寸规格</div>-->
+        <!--<div id="file-list" class="file-list">(上传本机构或者课程照片0/6)</div>-->
+        <div class="file-list">(上传本机构或者课程照片0/6)</div>
+        <input id="file" type="file" multiple>
+      </div>
+      <!--<input id="doc-form-file" type="file" multiple>-->
     </div>
-    <!-- 图片上传 -->
-    <div class="am-g upload-wrap">
-        <div class="am-form-group am-form-file upload">
-            <!--<div class="am-u-sm-4 upload-btn">-->
-            <!--<img src="../../images/upload.png" alt="">-->
-            <!--</div>-->
-            <div class="am-u-sm-5 gallery" id="gallery">
-                <img src="../../images/upload.png" alt="" class="upload-img">
-            </div>
-            <div class="am-u-sm-7 upload-txt">
-                <span id="upload" class="am-btn am-btn-primary">上传图片</span>
-                <!--<div id="file-list" class="file-list">照片大小尺寸规格</div>-->
-                <!--<div id="file-list" class="file-list">(上传本机构或者课程照片0/6)</div>-->
-                <div class="file-list">(上传本机构或者课程照片0/6)</div>
-                <input id="file" type="file" multiple>
-            </div>
-            <!--<input id="doc-form-file" type="file" multiple>-->
-        </div>
+  </div>
+  <!-- 评价 -->
+  <div class="am-g">
+    <h1 class="am-u-sm-12 header-title">评价</h1>
+  </div>
+  <div class="am-g appraise-area">
+    <div class="am-form-group">
+      <textarea class="txt-area"></textarea>
     </div>
-    <!-- 评价 -->
-    <div class="am-g">
-        <h1 class="am-u-sm-12 header-title">评价</h1>
-    </div>
-    <div class="am-g appraise-area">
-        <div class="am-form-group">
-            <textarea class="txt-area"></textarea>
-        </div>
-    </div>
-    <!-- 发表口碑 -->
-    <div class="am-g reg-btn">
-        <button type="submit" class="am-btn am-btn-primary am-btn-block">发表口碑</button>
-    </div>
+  </div>
+  <!-- 发表口碑 -->
+  <div class="am-g reg-btn">
+    <button type="submit" class="am-btn am-btn-primary am-btn-block">发表口碑</button>
+  </div>
 </form>
 <!-- E 课程评分主体 -->
 
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="../../js/lib/jquery-1.12.1.min.js"></script>
 <!--<![endif]-->
-<!--[if lte IE 8 ]>
-<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="../../assets/js/amazeui.ie8polyfill.min.js"></script>
-<![endif]-->
-
 <!-- 引入外部JS -->
 <script src="../../assets/js/amazeui.min.js"></script>
-<script src="../../js/appraise/publish-appraise.js"></script>
+<script src="../../js/appraise/publish-appraise.min.js"></script>
 </body>
 </html>

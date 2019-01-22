@@ -1,89 +1,58 @@
 <!doctype html>
-<html class="no-js">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>意见反馈</title>
-
-    <!-- Set render engine for 360 browser -->
-    <meta name="renderer" content="webkit">
-
-    <!-- No Baidu Siteapp-->
-    <meta http-equiv="Cache-Control" content="no-siteapp"/>
-
-    <link rel="icon" type="image/png" href="../../assets/i/favicon.png">
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="../../assets/i/app-icon72x72@2x.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
-    <link rel="apple-touch-icon-precomposed" href="../../assets/i/app-icon72x72@2x.png">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
-    <meta name="msapplication-TileColor" content="#0e90d2">
-
-    <link rel="stylesheet" href="../../assets/css/amazeui.min.css">
-    <link rel="stylesheet" href="../../assets/css/app.css">
-    <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/personal/suggestion.css">
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>意见反馈</title>
+  <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/personal/suggestion.min.css">
 </head>
 <body>
 <div class="am-g">
-    <form action="">
-        <div class="am-u-sm-12 form-select">
-            <select>
-                <option value="a" style="width: 100px;">请选择意见类型</option>
-                <option value="a">一般</option>
-                <option value="a">好</option>
-                <option value="a">差</option>
-            </select>
-        </div>
-        <div class="am-u-sm-12 form-txtarea am-margin-top-lg">
-            <textarea rows="10">请填写您的反馈详情……</textarea>
-            <span class="txtarea-tip am-text-lg grey">评论200字以内</span>
-        </div>
-        <div class="am-u-sm-12 am-margin-top-lg am-margin-bottom-lg">
-            <!--<div id="file-list" class="am-fl">-->
-                <!--<img src="../../images/1.png" alt="" width="100">-->
-            <!--</div>-->
-            <div id="gallery" class="am-fl gallery">
-                <img src="../../images/1.png" alt="" class="upload-img">
-            </div>
-            <!--<div class="am-form-group am-form-file am-fr">-->
-                <!--<p class="am-text-lg am-margin-top-xl">上传图片</p>-->
-                <!--<input id="doc-form-file" type="file" multiple>-->
-            <!--</div>-->
-            <div class="am-form-group am-form-file am-fr upload-txt">
-                <p class="am-text-lg am-margin-top-xl am-btn am-btn-primary" id="upload">上传图片</p>
-                <!--<input id="doc-form-file" type="file" multiple>-->
-                <input id="file" type="file" multiple>
-            </div>
-        </div>
-        <div class="am-u-sm-12">
-            <button type="submit" class="am-btn am-btn-danger am-btn-block submit-btn am-text-lg">提交意见</button>
-        </div>
-    </form>
+  <form action="">
+    <div class="am-u-sm-12 form-select">
+      <select>
+        <option value="a" style="width: 100px;">请选择意见类型</option>
+        <option value="a">一般</option>
+        <option value="a">好</option>
+        <option value="a">差</option>
+      </select>
+    </div>
+    <div class="am-u-sm-12 form-txtarea am-margin-top-lg">
+      <textarea rows="10">请填写您的反馈详情……</textarea>
+      <span class="txtarea-tip am-text-lg grey">评论200字以内</span>
+    </div>
+    <div class="am-u-sm-12 am-margin-top-lg am-margin-bottom-lg">
+      <!--<div id="file-list" class="am-fl">-->
+      <!--<img src="../../images/1.png" alt="" width="100">-->
+      <!--</div>-->
+      <div id="gallery" class="am-fl gallery">
+        <img src="../../images/1.png" alt="" class="upload-img">
+      </div>
+      <!--<div class="am-form-group am-form-file am-fr">-->
+      <!--<p class="am-text-lg am-margin-top-xl">上传图片</p>-->
+      <!--<input id="doc-form-file" type="file" multiple>-->
+      <!--</div>-->
+      <div class="am-form-group am-form-file am-fr upload-txt">
+        <p class="am-text-lg am-margin-top-xl am-btn am-btn-primary" id="upload">上传图片</p>
+        <!--<input id="doc-form-file" type="file" multiple>-->
+        <input id="file" type="file" multiple>
+      </div>
+    </div>
+    <div class="am-u-sm-12">
+      <button type="submit" class="am-btn am-btn-danger am-btn-block submit-btn am-text-lg">提交意见</button>
+    </div>
+  </form>
 </div>
 
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="../../js/lib/jquery-1.12.1.min.js"></script>
 <!--<![endif]-->
-<!--[if lte IE 8 ]>
-<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="../../assets/js/amazeui.ie8polyfill.min.js"></script>
-<![endif]-->
-
 <!-- 引入外部JS -->
 <script src="../../assets/js/amazeui.min.js"></script>
-<script src="../../js/personal/suggestion.js"></script>
+<script src="../../js/personal/suggestion.min.js"></script>
 </body>
 </html>

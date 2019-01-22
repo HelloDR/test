@@ -1,112 +1,82 @@
 <!doctype html>
-<html class="no-js">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>拼团信息</title>
-
-    <!-- Set render engine for 360 browser -->
-    <meta name="renderer" content="webkit">
-
-    <!-- No Baidu Siteapp-->
-    <meta http-equiv="Cache-Control" content="no-siteapp"/>
-
-    <link rel="icon" type="image/png" href="../../assets/i/favicon.png">
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="../../assets/i/app-icon72x72@2x.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
-    <link rel="apple-touch-icon-precomposed" href="../../assets/i/app-icon72x72@2x.png">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
-    <meta name="msapplication-TileColor" content="#0e90d2">
-
-    <link rel="stylesheet" href="../../assets/css/amazeui.min.css">
-    <link rel="stylesheet" href="../../assets/css/app.css">
-    <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/collage/collage-info.css">
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>拼团信息</title>
+  <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/collage/collage-info.min.css">
 </head>
 <body>
 <!-- 拼团课程信息 -->
 <div class="am-g">
-    <div class="am-u-sm-5 am-margin-top">
-        <img src="../../images/small-placeholder.jpg" alt="" class="am-img-responsive border50">
+  <div class="am-u-sm-5 am-margin-top">
+    <img src="../../images/small-placeholder.jpg" alt="" class="am-img-responsive border50">
+  </div>
+  <div class="am-u-sm-7 am-text-lg am-margin-top">
+    <p class="am-margin-bottom-lg">少儿国际英语班课程</p>
+    <p class="am-margin-bottom-0">2018-11-10</p>
+    <p>常州市武进区花园街</p>
+  </div>
+  <div class="am-u-sm-12 divide"></div>
+  <!--  拼团表单信息 -->
+  <form action="" class="am-form am-text-default">
+    <div class="am-u-sm-3 form-label"><label class="am-form-label">团长发言:</label></div>
+    <div class="am-u-sm-9"><input type="text" placeholder="召集其他宝妈参团的理由" class="no-border"></div>
+    <div class="am-u-sm-12 separate"></div>
+    <div class="am-u-sm-3 form-label"><label class="am-form-label">联系姓名:</label></div>
+    <div class="am-u-sm-9"><input type="text" placeholder="请输入您的姓名" class="no-border"></div>
+    <div class="am-u-sm-12 separate"></div>
+    <div class="am-u-sm-3 form-label"><label class="am-form-label">联系方式:</label></div>
+    <div class="am-u-sm-9"><input type="text" placeholder="请输入您的手机号码" class="no-border"></div>
+    <div class="am-u-sm-12 separate"></div>
+    <div class="am-u-sm-3 form-label"><label class="am-form-label">学员姓名:</label></div>
+    <div class="am-u-sm-9"><input type="text" placeholder="请输入学员姓名" class="no-border"></div>
+    <div class="am-u-sm-12 separate"></div>
+    <div class="am-u-sm-3 form-label"><label class="am-form-label">学院年龄:</label></div>
+    <div class="am-u-sm-9"><input type="text" placeholder="请输入学院年龄" class="no-border"></div>
+    <div class="am-u-sm-12 separate"></div>
+    <div class="am-u-sm-3 form-label"><label class="am-form-label">支付金额:</label></div>
+    <div class="am-u-sm-9 am-text-right"><span class="red am-text-xl">￥68</span></div>
+    <div class="am-u-sm-12 separate"></div>
+    <div class="am-u-sm-3 form-label"><label class="am-form-label">支付方式:</label></div>
+    <div class="am-u-sm-9">
+      <select name="pay-way" id="pay-name" class="no-border">
+        <option value="微信" style="padding:0 10px;">微信</option>
+        <option value="支付宝" style="padding:0 10px;">支付宝</option>
+      </select>
     </div>
-    <div class="am-u-sm-7 am-text-lg am-margin-top">
-        <p class="am-margin-bottom-lg">少儿国际英语班课程</p>
-        <p class="am-margin-bottom-0">2018-11-10</p>
-        <p>常州市武进区花园街</p>
+    <div class="am-u-sm-12 separate"></div>
+    <div class="am-u-sm-12 submit-btn">
+      <button
+        type="button"
+        class="am-btn am-btn-primary"
+        data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0,width:350,height:240}">
+        提交信息
+      </button>
+      <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
+        <div class="am-modal-dialog">
+          <div class="am-modal-hd">
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+          </div>
+          <div class="am-modal-bd">
+            <p class="red am-text-xxxl">￥68</p>
+            <p class="am-margin-bottom-xl pay-way am-text-lg"><span class="am-fl">付款方式</span><span
+              class="am-fr">微信支付</span></p>
+            <button class="am-margin-vertical-sm am-text-xxl">立即支付</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="am-u-sm-12 divide"></div>
-    <!--  拼团表单信息 -->
-    <form action="" class="am-form am-text-default">
-        <div class="am-u-sm-3 form-label"><label class="am-form-label">团长发言:</label></div>
-        <div class="am-u-sm-9"><input type="text" placeholder="召集其他宝妈参团的理由" class="no-border"></div>
-        <div class="am-u-sm-12 separate"></div>
-        <div class="am-u-sm-3 form-label"><label class="am-form-label">联系姓名:</label></div>
-        <div class="am-u-sm-9"><input type="text" placeholder="请输入您的姓名" class="no-border"></div>
-        <div class="am-u-sm-12 separate"></div>
-        <div class="am-u-sm-3 form-label"><label class="am-form-label">联系方式:</label></div>
-        <div class="am-u-sm-9"><input type="text" placeholder="请输入您的手机号码" class="no-border"></div>
-        <div class="am-u-sm-12 separate"></div>
-        <div class="am-u-sm-3 form-label"><label class="am-form-label">学员姓名:</label></div>
-        <div class="am-u-sm-9"><input type="text" placeholder="请输入学员姓名" class="no-border"></div>
-        <div class="am-u-sm-12 separate"></div>
-        <div class="am-u-sm-3 form-label"><label class="am-form-label">学院年龄:</label></div>
-        <div class="am-u-sm-9"><input type="text" placeholder="请输入学院年龄" class="no-border"></div>
-        <div class="am-u-sm-12 separate"></div>
-        <div class="am-u-sm-3 form-label"><label class="am-form-label">支付金额:</label></div>
-        <div class="am-u-sm-9 am-text-right"><span class="red am-text-xl">￥68</span></div>
-        <div class="am-u-sm-12 separate"></div>
-        <div class="am-u-sm-3 form-label"><label class="am-form-label">支付方式:</label></div>
-        <div class="am-u-sm-9">
-            <select name="pay-way" id="pay-name" class="no-border">
-                <option value="微信" style="padding:0 10px;">微信</option>
-                <option value="支付宝" style="padding:0 10px;">支付宝</option>
-            </select>
-        </div>
-        <div class="am-u-sm-12 separate"></div>
-        <div class="am-u-sm-12 submit-btn">
-            <button
-                    type="button"
-                    class="am-btn am-btn-primary"
-                    data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0,width:350,height:240}">
-                提交信息
-            </button>
-            <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
-                <div class="am-modal-dialog">
-                    <div class="am-modal-hd">
-                        <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
-                    </div>
-                    <div class="am-modal-bd">
-                       <p class="red am-text-xxxl">￥68</p>
-                        <p class="am-margin-bottom-xl pay-way am-text-lg"><span class="am-fl">付款方式</span><span class="am-fr">微信支付</span></p>
-                        <button class="am-margin-vertical-sm am-text-xxl">立即支付</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
+  </form>
 </div>
 
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="../../js/lib/jquery-1.12.1.min.js"></script>
 <!--<![endif]-->
-<!--[if lte IE 8 ]>
-<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="../../assets/js/amazeui.ie8polyfill.min.js"></script>
-<![endif]-->
-
 <!-- 引入外部JS -->
 <script src="../../assets/js/amazeui.min.js"></script>
 </body>
